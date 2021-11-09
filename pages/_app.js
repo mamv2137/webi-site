@@ -3,6 +3,7 @@ import { ChakraProvider } from "@chakra-ui/react";
 import theme from "../theme";
 
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 function MyApp({ Component, pageProps }) {
 	return (
@@ -10,6 +11,7 @@ function MyApp({ Component, pageProps }) {
 			<ChakraProvider resetCSS theme={theme}>
 				<Header>Header space</Header>
 				<Component {...pageProps} />
+				<Footer />
 			</ChakraProvider>
 		</>
 	);

@@ -1,5 +1,5 @@
 const colors = {
-	primary: {
+	pink: {
 		50: "#ffe5e5",
 		100: "#fab5b5",
 		200: "#f98483",
@@ -11,7 +11,7 @@ const colors = {
 		800: "#4a0503",
 		900: "#1a0000",
 	},
-	secondary: {
+	darkpink: {
 		50: "#ffe3f8",
 		100: "#ffb3e4",
 		200: "#fd81d0",
@@ -23,7 +23,7 @@ const colors = {
 		800: "#4d0031",
 		900: "#1d0011",
 	},
-	tertiary: {
+	purple: {
 		50: "#f2e9ff",
 		100: "#d2c1f2",
 		200: "#b498e7",
