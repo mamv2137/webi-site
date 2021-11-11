@@ -9,7 +9,6 @@ const theme = extendTheme({
 			},
 			// styles for the `a`
 			a: {
-				color: "teal.700",
 				_hover: {
 					textDecoration: "underline",
 				},
