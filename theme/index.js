@@ -4,14 +4,8 @@ const theme = extendTheme({
 	styles: {
 		global: {
 			body: {
-				bg: "pink.100",
+				bg: "white.100",
 				color: "purple.800",
-			},
-			// styles for the `a`
-			a: {
-				_hover: {
-					textDecoration: "underline",
-				},
 			},
 		},
 	},
