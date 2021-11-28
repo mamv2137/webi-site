@@ -46,9 +46,9 @@ function Header(props) {
         </Flex>
         <Box display="flex" justifyContent="space-between">
           <Box display="flex" alignItems="center" ml={6}>
-            <button class="btn rounded">
-              <span class="text-green">Hover Me</span>
-            </button>
+            <Button className="btn rounded">
+              <span className="text">Open Sea</span>
+            </Button>
             <IconButton borderRadius="50%" margin="1" icon={<BsDiscord />} />
             <IconButton borderRadius="50%" margin="1" icon={<BsTwitter />} />
           </Box>
