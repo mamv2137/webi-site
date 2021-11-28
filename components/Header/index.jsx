@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { Box, Flex, Button, IconButton } from "@chakra-ui/react";
-import { Image } from "@chakra-ui/react";
+import { Box, Flex, Button, IconButton, Image } from "@chakra-ui/react";
 
 import { BsDiscord, BsTwitter } from "react-icons/bs";
 import { GiHamburgerMenu } from "react-icons/Gi";
@@ -23,7 +22,12 @@ function Header(props) {
         justifyContent="space-between"
         alignItems="center"
       >
-        <Image boxSize="220px" height="auto" src="logo_webitos.png" alt="Logo Webitos" />
+        <Image
+          boxSize="220px"
+          height="auto"
+          src="logo_webitos.png"
+          alt="Logo Webitos"
+        />
         <Flex
           align="center"
           justify="space-between"
@@ -40,19 +44,13 @@ function Header(props) {
             Roadmap
           </Link>
         </Flex>
-        <Box
-          display="flex"
-          justifyContent="space-between"
-          alignItems="baseline"
-        >
-          Connect with wallet placeholder
-          <Box display="flex" ml={6}>
-            <Link px={2} href="/nowhere">
-              <BsDiscord />
-            </Link>
-            <Link px={2} href="/nowhere">
-              <BsTwitter />
-            </Link>
+        <Box display="flex" justifyContent="space-between">
+          <Box display="flex" alignItems="center" ml={6}>
+            <button class="btn rounded">
+              <span class="text-green">Hover Me</span>
+            </button>
+            <IconButton borderRadius="50%" margin="1" icon={<BsDiscord />} />
+            <IconButton borderRadius="50%" margin="1" icon={<BsTwitter />} />
           </Box>
         </Box>
         <IconButton

@@ -15,7 +15,7 @@ function Footer(props) {
         color="white"
       >
         <p className="copyrightDisclaimer">@2021 Genis NFT</p>
-        <Flex justify="space-between" w="14%">
+        <Flex justify="space-between">
           <Link href="/nowhere">Home</Link>
           <Link href="/nowhere">Marketplace</Link>
           <Link href="/nowhere">Inventory</Link>
