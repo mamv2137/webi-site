@@ -1,8 +1,11 @@
 import { Box } from "@chakra-ui/layout";
-import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
+import Introduction from "../components/Introduction";
+import { Container } from '@chakra-ui/react'
 
-export default function Home() {
-	return <Box className={styles.container} h="100vh"></Box>;
+export default function Home(){
+  return(
+    <Container h="100vh" display="flex" alignItems="center" justifyContent="center">
+        <Introduction />
+    </Container>
+  );
 }
