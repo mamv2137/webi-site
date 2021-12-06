@@ -182,7 +182,7 @@ export default function Introduction() {
           display={"flex"}
           justifyContent={"space-between"}
           alignItems={"center"}
-          maxWidth={"90%"}
+          maxWidth={"85%"}
           marginTop={"5%"}
           boxShadow={"2xl"}
         >
@@ -206,9 +206,11 @@ export default function Introduction() {
           <Box
             display={"flex"}
             alignItems={"space-between"}
-            justifyContent={"space-around"}
+            justifyContent={"space-evenly"}
             flexDirection={"column"}
-            padding={"8px"}
+            padding={"15px"}
+            height={"700px"}
+            marginTop={"1%"}
           >
             <Text padding={"8px 16px"} fontSize={"lg"} w={"100%"}>
               A little bit of joy for the co-founders, a.k.a to stop
