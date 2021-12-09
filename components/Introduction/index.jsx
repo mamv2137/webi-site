@@ -76,6 +76,18 @@ export default function Introduction() {
         flexDirection={"column"}
         marginTop={"35%"}
       >
+        <div class="lamp">
+          <div class="lava">
+            <div class="blob"></div>
+            <div class="blob"></div>
+            <div class="blob"></div>
+            <div class="blob"></div>
+            <div class="blob"></div>
+            <div class="blob"></div>
+            <div class="blob"></div>
+            <div class="blob"></div>
+          </div>
+        </div>
         <Container
           maxWidth={"100%"}
           minWidth={"1336px"}
@@ -304,6 +316,16 @@ export default function Introduction() {
             height={"100%"}
             marginTop={"1%"}
           >
+            <div class="lava">
+              <div class="blob"></div>
+              <div class="blob"></div>
+              <div class="blob"></div>
+              <div class="blob"></div>
+              <div class="blob"></div>
+              <div class="blob"></div>
+              <div class="blob"></div>
+              <div class="blob"></div>
+            </div>
             <Chrono
               theme={{
                 primary: "rgba(238, 143, 246, 0.8)",
@@ -317,7 +339,7 @@ export default function Introduction() {
           </Box>
         </Container>
         <Container
-          backgroundColor={"rgba(255, 255, 255, 0.9);"}
+          backgroundColor={"rgba(255, 255, 255, 1);"}
           borderRadius={"50px"}
           padding={"16px"}
           display={"flex"}
@@ -345,7 +367,18 @@ export default function Introduction() {
             display={"flex"}
             justifyContent={"space-evenly"}
             maxWidth={"95%"}
+            position={"relative"}
           >
+            <div class="lava">
+              <div class="blob"></div>
+              <div class="blob"></div>
+              <div class="blob"></div>
+              <div class="blob"></div>
+              <div class="blob"></div>
+              <div class="blob"></div>
+              <div class="blob"></div>
+              <div class="blob"></div>
+            </div>
             <Box
               display={"flex"}
               flexDirection={"column"}
