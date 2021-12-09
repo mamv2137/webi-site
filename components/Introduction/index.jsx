@@ -102,6 +102,7 @@ export default function Introduction() {
           <Box
             display={"flex"}
             flexDirection={"column"}
+            alignItems={"center"}
             backgroundColor={"white"}
             borderRadius={"35px"}
             padding={"20px"}
@@ -115,7 +116,7 @@ export default function Introduction() {
               src="logo_webitos.png"
               alt="Logo Webitos"
             />
-            <Text padding={"8px 16px"} fontSize={"xx-large"} fontWeight={"900"}>
+            <Text padding={"8px 16px"} fontSize={"4xl"} fontWeight={"800"}>
               Rarity of Webitos
             </Text>
             <Text padding={"8px 16px"} fontSize={"sm"}>
@@ -129,7 +130,7 @@ export default function Introduction() {
           </Box>
         </Container>
         <Container
-          paddingBlockStart={"20"}
+          paddingBlockStart={"70px"}
           display={"flex"}
           justifyContent={"space-evenly"}
           maxWidth={"95%"}
@@ -167,11 +168,18 @@ export default function Introduction() {
           <Box
             display={"flex"}
             flexDirection={"column"}
+            alignItems={"center"}
             backgroundColor={"white"}
             borderRadius={"35px"}
             padding={"20px"}
             boxShadow={"2xl"}
           >
+            <Image
+              boxSize="100px"
+              height="auto"
+              src="head.png"
+              alt="Gif Webitos"
+            />
             <Text
               padding={"8px 16px"}
               alignSelf={"start"}
@@ -222,7 +230,7 @@ export default function Introduction() {
           </Box>
         </Container>
         <Container
-          backgroundColor={"rgba(255, 255, 255, 0.8);"}
+          backgroundColor={"rgba(255, 255, 255, 0.9);"}
           borderRadius={"50px"}
           padding={"16px"}
           display={"flex"}
@@ -307,6 +315,128 @@ export default function Introduction() {
               disableNavOnKey
             />
           </Box>
+        </Container>
+        <Container
+          backgroundColor={"rgba(255, 255, 255, 0.9);"}
+          borderRadius={"50px"}
+          padding={"16px"}
+          display={"flex"}
+          flexDirection={"column"}
+          justifyContent={"center"}
+          alignItems={"center"}
+          maxWidth={"85%"}
+          marginTop={"5%"}
+          boxShadow={"2xl"}
+          marginBlockEnd={"80px"}
+        >
+          <Box>
+            <Text
+              padding={"8px 16px"}
+              alignSelf={"start"}
+              fontSize={"xx-large"}
+              fontWeight={"700"}
+            >
+              Team
+            </Text>
+          </Box>
+          <Container
+            paddingBlockStart={"40px"}
+            paddingBlockEnd={"40px"}
+            display={"flex"}
+            justifyContent={"space-evenly"}
+            maxWidth={"95%"}
+          >
+            <Box
+              display={"flex"}
+              flexDirection={"column"}
+              alignItems={"center"}
+              justifyContent={"center"}
+              width={"160px"}
+              height={"160px"}
+              backgroundColor={"white"}
+              borderRadius={"90px"}
+              boxShadow={"2xl"}
+            >
+              <Image
+                boxSize="150px"
+                height="auto"
+                src="team1.png"
+                alt="Gif Webitos"
+              />
+            </Box>
+            <Box
+              display={"flex"}
+              flexDirection={"column"}
+              alignItems={"center"}
+              justifyContent={"center"}
+              width={"160px"}
+              height={"160px"}
+              backgroundColor={"white"}
+              borderRadius={"90px"}
+              boxShadow={"2xl"}
+            >
+              <Image
+                boxSize="150px"
+                height="auto"
+                src="team2.png"
+                alt="Gif Webitos"
+              />
+            </Box>
+            <Box
+              display={"flex"}
+              flexDirection={"column"}
+              alignItems={"center"}
+              justifyContent={"center"}
+              width={"160px"}
+              height={"160px"}
+              backgroundColor={"white"}
+              borderRadius={"90px"}
+              boxShadow={"2xl"}
+            >
+              <Image
+                boxSize="150px"
+                height="auto"
+                src="team3.png"
+                alt="Gif Webitos"
+              />
+            </Box>
+            <Box
+              display={"flex"}
+              flexDirection={"column"}
+              alignItems={"center"}
+              justifyContent={"center"}
+              width={"160px"}
+              height={"160px"}
+              backgroundColor={"white"}
+              borderRadius={"90px"}
+              boxShadow={"2xl"}
+            >
+              <Image
+                boxSize="150px"
+                height="auto"
+                src="team4.png"
+                alt="Gif Webitos"
+              />
+            </Box>
+            <Box
+              display={"flex"}
+              flexDirection={"column"}
+              alignItems={"center"}
+              justifyContent={"center"}
+              width={"160px"}
+              height={"160px"}
+              backgroundColor={"white"}
+              borderRadius={"90px"}
+              boxShadow={"2xl"}
+            >
+              <Image
+                boxSize="150px"
+                height="auto"
+                src="team5.png"
+                alt="Gif Webitos"
+              />
+            </Box>
+          </Container>
         </Container>
       </Container>
     </>
