@@ -1,8 +1,46 @@
 import React, { useState } from "react";
 import { Box, Text, Image, Container } from "@chakra-ui/react";
 
-import img from "../../public/full_outline2.png";
+import { Chrono } from "react-chrono";
 
+const items = [
+  {
+    title: "10%",
+    cardTitle: "Our first goal yey!",
+    cardSubtitle:
+      "A little bit of joy for the co-founders, a.k.a to stop eating instant ramen noodles for a month at least",
+  },
+  {
+    title: "25%",
+    cardTitle: "Good stuff coming!",
+    cardSubtitle:
+      "Beginning of a parallel story, in this case we will take another collection from the neighboring city of Webitosland and thus get to know the beautiful Cuquitas",
+  },
+  {
+    title: "50%",
+    cardTitle: "MERCH!",
+    cardSubtitle:
+      "Launch of merchandise with your Webito to be fashionable in the coolest way (Airdrop free merch in a contest for the carriers of the Webitos and a safe Airdrop for those who have the animated Webitos)",
+  },
+  {
+    title: "75%",
+    cardTitle: "Some cool stories!",
+    cardSubtitle:
+      "We will create a Webitosverse comic and generate content often. And these comics will be generated NFT per page and will be distributed to Webitos holders (It's free NFT :D)",
+  },
+  {
+    title: "85%",
+    cardTitle: "Play with your Webito",
+    cardSubtitle:
+      "We will fund a play to earn game (liquidity pool) and all Webitos holders will be in the whitelist for the token presale",
+  },
+  {
+    title: "100%",
+    cardTitle: "Health and Webitos",
+    cardSubtitle:
+      "15% of all NFT sold will be donated to a nonprofit organization that treats prostate cancer where everyone as a community will vote and agree to contribute a grain of sand",
+  },
+];
 export default function Introduction() {
   return (
     <>
@@ -48,21 +86,29 @@ export default function Introduction() {
         >
           <Box
             w={"35%"}
-            padding={"25px"}
             display={"flex"}
             flexDirection={"column"}
-            alignItems={"center"}
+            alignItems={"flex-start"}
           >
             <Image
               borderRadius={"35px"}
-              boxSize="350px"
+              boxSize="480px"
               height="auto"
               src="gif.png"
               alt="Gif Webitos"
               boxShadow={"xl"}
             />
           </Box>
-          <Box w={"55%"} padding={"25px"}>
+          <Box
+            display={"flex"}
+            flexDirection={"column"}
+            backgroundColor={"white"}
+            borderRadius={"35px"}
+            padding={"20px"}
+            boxShadow={"2xl"}
+            w={"55%"}
+            padding={"25px"}
+          >
             <Image
               boxSize="350px"
               height="auto"
@@ -176,11 +222,11 @@ export default function Introduction() {
           </Box>
         </Container>
         <Container
-          backgroundColor={"white"}
-          borderRadius={"32px"}
+          backgroundColor={"rgba(255, 255, 255, 0.8);"}
+          borderRadius={"50px"}
           padding={"16px"}
           display={"flex"}
-          justifyContent={"space-between"}
+          justifyContent={"center"}
           alignItems={"center"}
           maxWidth={"85%"}
           marginTop={"5%"}
@@ -192,16 +238,54 @@ export default function Introduction() {
             alignItems={"center"}
             justifyContent={"space-between"}
             flexDirection={"column"}
-            padding={"8px"}
             boxShadow={"xl"}
-          > 
-            <div className="roadmap2" style={{position: "absolute", zIndex: "2"}}></div>
-            <Image zIndex={3} boxSize="150px" height="auto" src="head.png" alt="RoadMap" />
-            <Image zIndex={3} boxSize="150px" height="auto" src="head.png" alt="RoadMap" />
-            <Image zIndex={3} boxSize="150px" height="auto" src="head.png" alt="RoadMap" />
-            <Image zIndex={3} boxSize="150px" height="auto" src="head.png" alt="RoadMap" />
-            <Image zIndex={3} boxSize="150px" height="auto" src="head.png" alt="RoadMap" />
-            <Image zIndex={3} boxSize="150px" height="auto" src="head.png" alt="RoadMap" />
+          >
+            <div
+              className="roadmap2"
+              style={{ position: "absolute", zIndex: "2" }}
+            ></div>
+            <Image
+              zIndex={3}
+              paddingBlockStart={"20px"}
+              boxSize="250px"
+              width="250px"
+              height="auto"
+              src="1.png"
+              alt="RoadMap"
+            />
+            <Image
+              zIndex={3}
+              boxSize="250px"
+              width="250px"
+              height="auto"
+              src="2.png"
+              alt="RoadMap"
+            />
+            <Image
+              zIndex={3}
+              boxSize="250px"
+              width="250px"
+              height="auto"
+              src="3.png"
+              alt="RoadMap"
+            />
+            <Image
+              zIndex={3}
+              boxSize="250px"
+              width="250px"
+              height="auto"
+              src="4.png"
+              alt="RoadMap"
+            />
+            <Image
+              zIndex={3}
+              paddingBlockEnd={"20px"}
+              boxSize="250px"
+              width="250px"
+              height="auto"
+              src="5.png"
+              alt="RoadMap"
+            />
           </Box>
           <Box
             display={"flex"}
@@ -209,38 +293,19 @@ export default function Introduction() {
             justifyContent={"space-evenly"}
             flexDirection={"column"}
             padding={"15px"}
-            height={"700px"}
+            height={"100%"}
             marginTop={"1%"}
           >
-            <Text padding={"8px 16px"} fontSize={"lg"} w={"100%"}>
-              A little bit of joy for the co-founders, a.k.a to stop
-              eating instant ramen noodles for a month at least
-            </Text>
-            <Text padding={"8px 16px"} fontSize={"lg"} w={"100%"}>
-              Beginning of a parallel story, in this case we will take
-              another collection from the neighboring city of Webitosland and
-              thus get to know the beautiful Cuquitas
-            </Text>
-            <Text padding={"8px 16px"} fontSize={"lg"} w={"100%"}>
-              Launch of merchandise with your Webito to be fashionable in
-              the coolest way (Airdrop free merch in a contest for the carriers
-              of the Webitos and a safe Airdrop for those who have the animated
-              Webitos)
-            </Text>
-            <Text padding={"8px 16px"} fontSize={"lg"} w={"100%"}>
-              We will create a Webitosverse comic and generate content
-              often. And these comics will be generated NFT per page and will be
-              distributed to Webitos holders (It's free NFT: D)
-            </Text>
-            <Text padding={"8px 16px"} fontSize={"lg"} w={"100%"}>
-              We will fund a play to earn game (liquidity pool) and all
-              Webitos holders will be in the whitelist for the token presale
-            </Text>
-            <Text padding={"8px 16px"} fontSize={"lg"} w={"100%"}>
-              15% of all NFT sold will be donated to a nonprofit
-              organization that treats prostate cancer where everyone as a
-              community will vote and agree to contribute a grain of sand
-            </Text>
+            <Chrono
+              theme={{
+                primary: "rgba(238, 143, 246, 0.8)",
+                secondary: "rgb(105, 43, 219)",
+              }}
+              items={items}
+              zIndex={-1}
+              mode="VERTICAL"
+              disableNavOnKey
+            />
           </Box>
         </Container>
       </Container>

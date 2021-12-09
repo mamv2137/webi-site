@@ -15,7 +15,6 @@ body {
 }
 
 body {
-  /*background: linear-gradient(-45deg, #ffffff, #fd90d9, #23a6d5, #23d5ab);*/
   background: linear-gradient(-45deg, #ffffff, rgba(238, 143, 246, 0.8), rgba(142, 250, 245, 0.8), rgba(72, 240, 156, 0.8));
   background-size: 400% 400%;
   animation: gradient 20s ease infinite;
@@ -82,31 +81,53 @@ a {
   width: 100%;
 }
 
-/* animate example */ 
-.ml7 {
-  position: relative;
-  font-weight: 900;
-  font-size: 3.7em;
-}
-.ml7 .text-wrapper {
-  position: relative;
-  display: inline-block;
-  padding-top: 0.2em;
-  padding-right: 0.05em;
-  padding-bottom: 0.1em;
-  overflow: hidden;
-}
-.ml7 .letter {
-  transform-origin: 0 100%;
-  display: inline-block;
-  line-height: 1em;
-}
+/* fill roadmap animation */ 
 
-/* fill animation */ 
+.roadmap {
+  width:250px;
+  height:auto;
+  min-height: 1420px;
+  border-radius: 70px;
+  line-height:200px;
+  text-align:center;
+  color:rgba(142, 250, 245, 0.8);
+  font-size:25px;
+  font-weight:600;
+  text-transform:uppercase;
+  position:relative;
+  overflow:hidden;
+  margin-left: 20px;
+  z-index: 4;
+}
+.roadmap:before {
+  content:"";
+  position:absolute;
+  width:400px;
+  height:400px;
+  background:#00acee;
+  left:50%;
+  transform:translateX(-50%);
+  border-radius:40%;
+  animation:fill 7s ease-in-out infinite;
+  z-index:-1;
+}
+.roadmap:after {
+  content:"";
+  position:absolute;
+  width:180px;
+  height:180px;
+  background:#ee007f;
+  left:50%;
+  transform:translateX(-50%);
+  border-radius:40%;
+  animation:fill 5s ease-in-out infinite;
+  z-index:-1;
+}
 
 .roadmap2 {
-  width:100px;
-  height:900px;
+  width:200px;
+  height:auto;
+  min-height: 1420px;
   border-radius:50px;
   line-height:200px;
   text-align:center;
@@ -133,8 +154,8 @@ a {
 .roadmap2:after {
   content:"";
   position:absolute;
-  width:130px;
-  height:130px;
+  width:300px;
+  height:300px;
   background:#00e6ee;
   left:50%;
   transform:translateX(-50%);
@@ -142,69 +163,111 @@ a {
   animation:fill2 5s ease-in-out infinite;
   z-index:-1;
 }
-.roadmap {
-  width:100px;
-  height:600px;
-  border-radius:50px;
-  line-height:200px;
-  text-align:center;
-  color:rgba(142, 250, 245, 0.8);
-  font-size:25px;
-  font-weight:600;
-  text-transform:uppercase;
-  position:relative;
-  overflow:hidden;
-}
-.roadmap:before {
-  content:"";
-  position:absolute;
-  width:400px;
-  height:400px;
-  background:#00acee;
-  left:50%;
-  transform:translateX(-50%);
-  border-radius:40%;
-  animation:fill 7s ease-in-out infinite;
-  z-index:-1;
-}
-.roadmap:after {
-  content:"";
-  position:absolute;
-  width:180px;
-  height:180px;
-  background:#ee007f;
-  left:50%;
-  transform:translateX(-50%);
-  border-radius:40%;
-  animation:fill 5s ease-in-out infinite;
-  z-index:-1;
-}
+
 @keyframes fill {
   0% {
-    top:250px;
+    top:1000px;
     transform:translateX(-50%) rotate(0deg);
   }
   50% {
-    top:-50px;
+    top:-500px;
     transform:translateX(-50%) rotate(360deg);
   }
   100% {
-    top:250px;
+    top:1000px;
     transform:translateX(-50%) rotate(0deg);
   }
 }
 
 @keyframes fill2 {
   0% {
-    top:550px;
+    top:1250px;
     transform:translateX(-50%) rotate(0deg);
   }
   50% {
-    top:-50px;
+    top:-350px;
     transform:translateX(-50%) rotate(360deg);
   }
   100% {
-    top:550px;
+    top:1250px;
     transform:translateX(-50%) rotate(0deg);
   }
+}
+
+/* Overide css on roadmap component*/
+.css-146mkh5-TitleWrapper.active {
+  color: #d200ee !important;
+}
+
+
+#timeline-main-wrapper > div > div:nth-child(1) > div.right.css-mpnodf-TimelineTitleWrapper.eecm4uk0 > div,
+#timeline-main-wrapper > div > div:nth-child(2) > div.right.css-mpnodf-TimelineTitleWrapper.eecm4uk0 > div,
+#timeline-main-wrapper > div > div:nth-child(3) > div.right.css-mpnodf-TimelineTitleWrapper.eecm4uk0 > div,
+#timeline-main-wrapper > div > div:nth-child(4) > div.right.css-mpnodf-TimelineTitleWrapper.eecm4uk0 > div,
+#timeline-main-wrapper > div > div:nth-child(5) > div.right.css-mpnodf-TimelineTitleWrapper.eecm4uk0 > div,
+#timeline-main-wrapper > div > div:nth-child(6) > div.right.css-mpnodf-TimelineTitleWrapper.eecm4uk0 > div {
+  background: rgb(105, 43, 219)!important;
+  color: white;
+  border-radius: 50px!important;
+  height: 80px !important;
+  width: 80px !important;
+  padding: 12px !important;
+  text-align: center !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 32px !important;
+  font-weight: 700;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#timeline-main-wrapper > div > div:nth-child(6) > div.right.css-mpnodf-TimelineTitleWrapper.eecm4uk0 > div {
+  font-size: 28px !important;
+}
+
+#timeline-main-wrapper > div > div:nth-child(1) > div.card-content-wrapper.visible.right.css-w3dsrb-TimelineCardContentWrapper.eecm4uk2 > section > div,
+#timeline-main-wrapper > div > div:nth-child(2) > div.card-content-wrapper.visible.right.css-w3dsrb-TimelineCardContentWrapper.eecm4uk2 > section > div,
+#timeline-main-wrapper > div > div:nth-child(3) > div.card-content-wrapper.visible.right.css-w3dsrb-TimelineCardContentWrapper.eecm4uk2 > section > div,
+#timeline-main-wrapper > div > div:nth-child(4) > div.card-content-wrapper.visible.right.css-w3dsrb-TimelineCardContentWrapper.eecm4uk2 > section > div,
+#timeline-main-wrapper > div > div:nth-child(5) > div.card-content-wrapper.visible.right.css-w3dsrb-TimelineCardContentWrapper.eecm4uk2 > section > div,
+#timeline-main-wrapper > div > div:nth-child(6) > div.card-content-wrapper.visible.right.css-w3dsrb-TimelineCardContentWrapper.eecm4uk2 > section > div {
+  display: none;
+}
+
+#timeline-main-wrapper > div > div:nth-child(1) > div.card-content-wrapper.visible.right.css-w3dsrb-TimelineCardContentWrapper.eecm4uk2 > section,
+#timeline-main-wrapper > div > div:nth-child(2) > div.card-content-wrapper.visible.right.css-w3dsrb-TimelineCardContentWrapper.eecm4uk2 > section,
+#timeline-main-wrapper > div > div:nth-child(3) > div.card-content-wrapper.visible.right.css-w3dsrb-TimelineCardContentWrapper.eecm4uk2 > section,
+#timeline-main-wrapper > div > div:nth-child(4) > div.card-content-wrapper.visible.right.css-w3dsrb-TimelineCardContentWrapper.eecm4uk2 > section,
+#timeline-main-wrapper > div > div:nth-child(5) > div.card-content-wrapper.visible.right.css-w3dsrb-TimelineCardContentWrapper.eecm4uk2 > section,
+#timeline-main-wrapper > div > div:nth-child(6) > div.card-content-wrapper.visible.right.css-w3dsrb-TimelineCardContentWrapper.eecm4uk2 > section {
+  border-radius: 50px !important;
+  padding: 50px !important;
+}
+
+.css-16u30nb-TimelineControlContainer{
+  display: none !important;
+}
+
+#timeline-main-wrapper {
+  overflow-y: initial !important;
+  overflow-x: initial !important;
+}
+
+#timeline-main-wrapper > div > div:nth-child(1) > div.card-content-wrapper.visible.right.css-w3dsrb-TimelineCardContentWrapper.eecm4uk2 > section > header > p.card-sub-title.css-3qxz5x-TimelineContentSubTitle.emk90bu8,
+#timeline-main-wrapper > div > div:nth-child(2) > div.card-content-wrapper.visible.right.css-w3dsrb-TimelineCardContentWrapper.eecm4uk2 > section > header > p.card-sub-title.css-3qxz5x-TimelineContentSubTitle.emk90bu8,
+#timeline-main-wrapper > div > div:nth-child(3) > div.card-content-wrapper.visible.right.css-w3dsrb-TimelineCardContentWrapper.eecm4uk2 > section > header > p.card-sub-title.css-3qxz5x-TimelineContentSubTitle.emk90bu8,
+#timeline-main-wrapper > div > div:nth-child(4) > div.card-content-wrapper.visible.right.css-w3dsrb-TimelineCardContentWrapper.eecm4uk2 > section > header > p.card-sub-title.css-3qxz5x-TimelineContentSubTitle.emk90bu8,
+#timeline-main-wrapper > div > div:nth-child(5) > div.card-content-wrapper.visible.right.css-w3dsrb-TimelineCardContentWrapper.eecm4uk2 > section > header > p.card-sub-title.css-3qxz5x-TimelineContentSubTitle.emk90bu8,
+#timeline-main-wrapper > div > div:nth-child(6) > div.card-content-wrapper.visible.right.css-w3dsrb-TimelineCardContentWrapper.eecm4uk2 > section > header > p.card-sub-title.css-3qxz5x-TimelineContentSubTitle.emk90bu8 {
+  color: rgb(44, 15, 97) !important;
+}
+
+.css-et2yz3-TimelineContentSubTitle {
+  color: rgb(44, 15, 97) !important;
+}
+
+.css-9siglz-TimelineCardTitle {
+  color: rgba(238, 143, 246, 1) !important;
+  font-size: 20px !important;
+  margin-bottom: 8px !important;
 }

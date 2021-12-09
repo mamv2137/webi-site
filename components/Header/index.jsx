@@ -21,6 +21,7 @@ function Header(props) {
         display="flex"
         justifyContent="space-between"
         alignItems="center"
+        zIndex={5}
       >
         <Image
           boxSize="220px"
