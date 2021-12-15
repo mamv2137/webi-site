@@ -1,15 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import { Box, Text, Image, Container } from "@chakra-ui/react";
-
 import { Chrono } from "react-chrono";
+import TeamCard from "../TeamCard";
+import BackgroundsBlobs from "../BackgroundsBlobs";
+import RoadMapBar from "../RoadMapBar";
 
 const items = [
-  {
-    title: "10%",
-    cardTitle: "Our first goal yey!",
-    cardSubtitle:
-      "A little bit of joy for the co-founders, a.k.a to stop eating instant ramen noodles for a month at least",
-  },
   {
     title: "25%",
     cardTitle: "Good stuff coming!",
@@ -41,27 +37,30 @@ const items = [
       "15% of all NFT sold will be donated to a nonprofit organization that treats prostate cancer where everyone as a community will vote and agree to contribute a grain of sand",
   },
 ];
+
 export default function Introduction() {
   return (
     <>
       <Image
         left={"-15%"}
+        top="4%"
         opacity={"0.7"}
         zIndex={-2}
         position={"absolute"}
         boxSize="900px"
         height="auto"
-        src="full_outline2.png"
+        src="argolla_azul.png"
         alt="Logo Webitos"
       />
       <Image
         right={"-15%"}
-        opacity={"0.5"}
+        top="1%"
+        opacity={"0.6"}
         zIndex={-2}
         position={"absolute"}
         boxSize="700px"
         height="auto"
-        src="full_outline3.png"
+        src="demon_rosa.png"
         alt="Logo Webitos"
         style={{ transform: "rotate(45deg)" }}
       />
@@ -76,18 +75,11 @@ export default function Introduction() {
         flexDirection={"column"}
         marginTop={"35%"}
       >
-        <div class="lamp">
-          <div class="lava">
-            <div class="blob"></div>
-            <div class="blob"></div>
-            <div class="blob"></div>
-            <div class="blob"></div>
-            <div class="blob"></div>
-            <div class="blob"></div>
-            <div class="blob"></div>
-            <div class="blob"></div>
-          </div>
-        </div>
+        <div
+          style={{ marginTop: "-40px", paddingTop: "120px" }}
+          id="about"
+        ></div>
+        <BackgroundsBlobs />
         <Container
           maxWidth={"100%"}
           minWidth={"1336px"}
@@ -142,10 +134,12 @@ export default function Introduction() {
           </Box>
         </Container>
         <Container
-          paddingBlockStart={"70px"}
-          display={"flex"}
-          justifyContent={"space-evenly"}
-          maxWidth={"95%"}
+          paddingBlockStart="70px"
+          display="flex"
+          justifyContent="space-evenly"
+          maxWidth="95%"
+          width={["33%", "95%"]}
+          flexWrap={"wrap"}
         >
           <Box
             display={"flex"}
@@ -241,6 +235,7 @@ export default function Introduction() {
             </Text>
           </Box>
         </Container>
+        <div id="roadmap"></div>
         <Container
           backgroundColor={"rgba(255, 255, 255, 0.9);"}
           borderRadius={"50px"}
@@ -252,61 +247,7 @@ export default function Introduction() {
           marginTop={"5%"}
           boxShadow={"2xl"}
         >
-          <Box
-            className="roadmap"
-            display={"flex"}
-            alignItems={"center"}
-            justifyContent={"space-between"}
-            flexDirection={"column"}
-            boxShadow={"xl"}
-          >
-            <div
-              className="roadmap2"
-              style={{ position: "absolute", zIndex: "2" }}
-            ></div>
-            <Image
-              zIndex={3}
-              paddingBlockStart={"20px"}
-              boxSize="250px"
-              width="250px"
-              height="auto"
-              src="1.png"
-              alt="RoadMap"
-            />
-            <Image
-              zIndex={3}
-              boxSize="250px"
-              width="250px"
-              height="auto"
-              src="2.png"
-              alt="RoadMap"
-            />
-            <Image
-              zIndex={3}
-              boxSize="250px"
-              width="250px"
-              height="auto"
-              src="3.png"
-              alt="RoadMap"
-            />
-            <Image
-              zIndex={3}
-              boxSize="250px"
-              width="250px"
-              height="auto"
-              src="4.png"
-              alt="RoadMap"
-            />
-            <Image
-              zIndex={3}
-              paddingBlockEnd={"20px"}
-              boxSize="250px"
-              width="250px"
-              height="auto"
-              src="5.png"
-              alt="RoadMap"
-            />
-          </Box>
+          <RoadMapBar />
           <Box
             display={"flex"}
             alignItems={"space-between"}
@@ -316,16 +257,7 @@ export default function Introduction() {
             height={"100%"}
             marginTop={"1%"}
           >
-            <div class="lava">
-              <div class="blob"></div>
-              <div class="blob"></div>
-              <div class="blob"></div>
-              <div class="blob"></div>
-              <div class="blob"></div>
-              <div class="blob"></div>
-              <div class="blob"></div>
-              <div class="blob"></div>
-            </div>
+            <BackgroundsBlobs />
             <Chrono
               theme={{
                 primary: "rgba(238, 143, 246, 0.8)",
@@ -351,7 +283,7 @@ export default function Introduction() {
           boxShadow={"2xl"}
           marginBlockEnd={"80px"}
         >
-          <Box>
+          <Box id="team" textAlign="center">
             <Text
               padding={"8px 16px"}
               alignSelf={"start"}
@@ -359,6 +291,10 @@ export default function Introduction() {
               fontWeight={"700"}
             >
               Team
+            </Text>
+            <Text padding={"8px 16px"} fontSize={"sm"}>
+              Members info Members info Members info Members info Members info
+              Members info
             </Text>
           </Box>
           <Container
@@ -369,106 +305,12 @@ export default function Introduction() {
             maxWidth={"95%"}
             position={"relative"}
           >
-            <div class="lava">
-              <div class="blob"></div>
-              <div class="blob"></div>
-              <div class="blob"></div>
-              <div class="blob"></div>
-              <div class="blob"></div>
-              <div class="blob"></div>
-              <div class="blob"></div>
-              <div class="blob"></div>
-            </div>
-            <Box
-              display={"flex"}
-              flexDirection={"column"}
-              alignItems={"center"}
-              justifyContent={"center"}
-              width={"160px"}
-              height={"160px"}
-              backgroundColor={"white"}
-              borderRadius={"90px"}
-              boxShadow={"2xl"}
-            >
-              <Image
-                boxSize="150px"
-                height="auto"
-                src="team1.png"
-                alt="Gif Webitos"
-              />
-            </Box>
-            <Box
-              display={"flex"}
-              flexDirection={"column"}
-              alignItems={"center"}
-              justifyContent={"center"}
-              width={"160px"}
-              height={"160px"}
-              backgroundColor={"white"}
-              borderRadius={"90px"}
-              boxShadow={"2xl"}
-            >
-              <Image
-                boxSize="150px"
-                height="auto"
-                src="team2.png"
-                alt="Gif Webitos"
-              />
-            </Box>
-            <Box
-              display={"flex"}
-              flexDirection={"column"}
-              alignItems={"center"}
-              justifyContent={"center"}
-              width={"160px"}
-              height={"160px"}
-              backgroundColor={"white"}
-              borderRadius={"90px"}
-              boxShadow={"2xl"}
-            >
-              <Image
-                boxSize="150px"
-                height="auto"
-                src="team3.png"
-                alt="Gif Webitos"
-              />
-            </Box>
-            <Box
-              display={"flex"}
-              flexDirection={"column"}
-              alignItems={"center"}
-              justifyContent={"center"}
-              width={"160px"}
-              height={"160px"}
-              backgroundColor={"white"}
-              borderRadius={"90px"}
-              boxShadow={"2xl"}
-            >
-              <Image
-                boxSize="150px"
-                height="auto"
-                src="team4.png"
-                alt="Gif Webitos"
-              />
-            </Box>
-            <Box
-              display={"flex"}
-              flexDirection={"column"}
-              alignItems={"center"}
-              justifyContent={"center"}
-              width={"160px"}
-              height={"160px"}
-              backgroundColor={"white"}
-              borderRadius={"90px"}
-              boxShadow={"2xl"}
-            >
-              <Image
-                boxSize="150px"
-                height="auto"
-                src="team5.png"
-                alt="Gif Webitos"
-              />
-            </Box>
+            <BackgroundsBlobs />
+            <TeamCard name="Andresitos" image="team1.png" />
+            <TeamCard name="Robertito" image="team2.png" />
+            <TeamCard name="Gilsito" image="team3.png" />
+            <TeamCard name="Frozonito" image="team4.png" />
+            <TeamCard name="Mauriito" image="team5.png" />
           </Container>
         </Container>
       </Container>

@@ -5,10 +5,10 @@ import { BsDiscord, BsTwitter } from "react-icons/bs";
 import { GiHamburgerMenu } from "react-icons/Gi";
 import { GrClose } from "react-icons/Gr";
 
-import Link from "next/link";
 
 function Header(props) {
   const [display, setDisplay] = useState("none");
+
   return (
     <>
       <Box
@@ -30,20 +30,24 @@ function Header(props) {
           alt="Logo Webitos"
         />
         <Flex
+          className="nav"
           align="center"
           justify="space-between"
           w="16%"
           display={["none", "none", "flex", "flex"]}
         >
-          <Link href="/" px={3}>
+          <a href="#home" data-hover="Home" px={3}>
             Home
-          </Link>
-          <Link href="/about" px={3}>
+          </a>
+          <a href="#about" data-hover="About" px={3}>
             About
-          </Link>
-          <Link href="/roadmap" px={3}>
+          </a>
+          <a href="#roadmap" data-hover="Roadmap" px={3}>
             Roadmap
-          </Link>
+          </a>
+          <a href="#team" data-hover="Team" px={3}>
+            Team
+          </a>
         </Flex>
         <Box display="flex" justifyContent="space-between">
           <Box display="flex" alignItems="center" ml={6}>
@@ -85,15 +89,7 @@ function Header(props) {
             />
           </Flex>
           <Flex flexDir="column" align="center">
-            <Link href="/" px={3}>
-              Home
-            </Link>
-            <Link href="/about" px={3}>
-              About
-            </Link>
-            <Link href="/roadmap" px={3}>
-              Roadmap
-            </Link>
+
           </Flex>
         </Flex>
       </Box>

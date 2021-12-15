@@ -1,9 +1,7 @@
-import React, { useState } from "react";
-import { Flex, Button, IconButton } from "@chakra-ui/react";
-import { BsDiscord, BsTwitter } from "react-icons/bs";
-import Link from "next/link";
+import React from "react";
+import { Flex } from "@chakra-ui/react";
 
-function Footer(props) {
+function Footer() {
   return (
     <>
       <Flex
@@ -15,11 +13,6 @@ function Footer(props) {
         color="white"
       >
         <p className="copyrightDisclaimer">@2021 Genis NFT</p>
-        <Flex justify="space-between">
-          <Link href="/nowhere">Home</Link>
-          <Link href="/nowhere">Marketplace</Link>
-          <Link href="/nowhere">Inventory</Link>
-        </Flex>
       </Flex>
     </>
   );
