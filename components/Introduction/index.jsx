@@ -1,5 +1,6 @@
 import React from "react";
-import { Box, Text, Image, Container } from "@chakra-ui/react";
+import { Box, Text, Image, Container, Flex } from "@chakra-ui/react";
+import { useMediaQuery } from "@chakra-ui/react";
 import { Chrono } from "react-chrono";
 import TeamCard from "../TeamCard";
 import BackgroundsBlobs from "../BackgroundsBlobs";
@@ -67,7 +68,6 @@ export default function Introduction() {
       <Container
         fontFamily={"Raleway"}
         paddingInlineEnd={"0"}
-        paddingInlineEnd={"0"}
         maxWidth={"100%"}
         minWidth={"1336px"}
         display={"flex"}
@@ -75,24 +75,22 @@ export default function Introduction() {
         flexDirection={"column"}
         marginTop={"35%"}
       >
-        <div
-          style={{ marginTop: "-40px", paddingTop: "120px" }}
-          id="about"
-        ></div>
+        <div style={{ marginTop: "-40px", paddingTop: "120px" }} id="home"></div>
         <BackgroundsBlobs />
         <Container
-          maxWidth={"100%"}
-          minWidth={"1336px"}
-          display={"flex"}
+          display="flex"
+          justifyContent="space-evenly"
+          maxWidth="95%"
           alignItems={"center"}
           flexWrap={"wrap"}
-          justifyContent={"space-around"}
+          flexDirection={{ base: 'column', md: 'column', lg: 'row' }}
         >
           <Box
             w={"35%"}
             display={"flex"}
             flexDirection={"column"}
             alignItems={"flex-start"}
+            margin={"2rem"}
           >
             <Image
               borderRadius={"35px"}
@@ -111,8 +109,10 @@ export default function Introduction() {
             borderRadius={"35px"}
             padding={"20px"}
             boxShadow={"2xl"}
-            w={"55%"}
+            w={{ base: '40%', md: '40%', lg: '55%' }}
             padding={"25px"}
+            margin={"1rem"}
+            flexWrap={"wrap"}
           >
             <Image
               boxSize="350px"
@@ -138,7 +138,7 @@ export default function Introduction() {
           display="flex"
           justifyContent="space-evenly"
           maxWidth="95%"
-          width={["33%", "95%"]}
+          width={{ base: '33%', md: '66%', lg: '87%' }}
           flexWrap={"wrap"}
         >
           <Box
@@ -147,6 +147,7 @@ export default function Introduction() {
             backgroundColor={"white"}
             borderRadius={"35px"}
             padding={"20px"}
+            margin={"1rem"}
             boxShadow={"2xl"}
           >
             <Text
@@ -178,6 +179,7 @@ export default function Introduction() {
             backgroundColor={"white"}
             borderRadius={"35px"}
             padding={"20px"}
+            margin={"1rem"}
             boxShadow={"2xl"}
           >
             <Image
@@ -211,6 +213,7 @@ export default function Introduction() {
             backgroundColor={"white"}
             borderRadius={"35px"}
             padding={"20px"}
+            margin={"1rem"}
             boxShadow={"2xl"}
           >
             <Text
@@ -239,11 +242,11 @@ export default function Introduction() {
         <Container
           backgroundColor={"rgba(255, 255, 255, 0.9);"}
           borderRadius={"50px"}
-          padding={"16px"}
+          padding={{ base: '4rem', md: '4rem', lg: '2rem' }}
           display={"flex"}
           justifyContent={"center"}
           alignItems={"center"}
-          maxWidth={"85%"}
+          maxWidth={{ base: '60%', md: '60%', lg: '85%' }}
           marginTop={"5%"}
           boxShadow={"2xl"}
         >

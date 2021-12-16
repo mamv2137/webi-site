@@ -122,6 +122,14 @@ a {
   margin-left: 20px;
   z-index: 4;
 }
+
+@media only screen and (max-width: 48em) {
+  .roadmap {
+    width:390px;
+    min-height: 1420px;
+  }
+}
+
 .roadmap:before {
   content:"";
   position:absolute;
@@ -242,6 +250,19 @@ a {
   font-size: 32px !important;
   font-weight: 700;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media only screen and (max-width: 48em) {
+  #timeline-main-wrapper > div > div:nth-child(1) > div.right.css-mpnodf-TimelineTitleWrapper.eecm4uk0 > div,
+#timeline-main-wrapper > div > div:nth-child(2) > div.right.css-mpnodf-TimelineTitleWrapper.eecm4uk0 > div,
+#timeline-main-wrapper > div > div:nth-child(3) > div.right.css-mpnodf-TimelineTitleWrapper.eecm4uk0 > div,
+#timeline-main-wrapper > div > div:nth-child(4) > div.right.css-mpnodf-TimelineTitleWrapper.eecm4uk0 > div,
+#timeline-main-wrapper > div > div:nth-child(5) > div.right.css-mpnodf-TimelineTitleWrapper.eecm4uk0 > div,
+#timeline-main-wrapper > div > div:nth-child(6) > div.right.css-mpnodf-TimelineTitleWrapper.eecm4uk0 > div {
+    height: 66px !important;
+    width: 70px !important;
+    font-size: 24px !important;
+  }
 }
 
 #timeline-main-wrapper > div > div:nth-child(6) > div.right.css-mpnodf-TimelineTitleWrapper.eecm4uk0 > div {

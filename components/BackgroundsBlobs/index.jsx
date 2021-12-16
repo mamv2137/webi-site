@@ -2,15 +2,15 @@ import React from 'react'
 
 export default function BackgroundsBlobs() {
   return (
-  <div class="lava">
-    <div class="blob"></div>
-    <div class="blob"></div>
-    <div class="blob"></div>
-    <div class="blob"></div>
-    <div class="blob"></div>
-    <div class="blob"></div>
-    <div class="blob"></div>
-    <div class="blob"></div>
+  <div classname="lava">
+    <div classname="blob"></div>
+    <div classname="blob"></div>
+    <div classname="blob"></div>
+    <div classname="blob"></div>
+    <div classname="blob"></div>
+    <div classname="blob"></div>
+    <div classname="blob"></div>
+    <div classname="blob"></div>
   </div>
   )
 }

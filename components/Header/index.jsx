@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Box, Flex, Button, IconButton, Image } from "@chakra-ui/react";
+import { Box, Flex, Button, IconButton, Image, Text } from "@chakra-ui/react";
 
 import { BsDiscord, BsTwitter } from "react-icons/bs";
 import { GiHamburgerMenu } from "react-icons/Gi";
@@ -35,19 +35,22 @@ function Header(props) {
           justify="space-between"
           w="16%"
           display={["none", "none", "flex", "flex"]}
-        >
-          <a href="#home" data-hover="Home" px={3}>
-            Home
-          </a>
-          <a href="#about" data-hover="About" px={3}>
-            About
-          </a>
-          <a href="#roadmap" data-hover="Roadmap" px={3}>
-            Roadmap
-          </a>
-          <a href="#team" data-hover="Team" px={3}>
-            Team
-          </a>
+        > 
+          <Text margin="1rem">
+            <a href="#home" data-hover="Home" px={3}>
+              Home
+            </a>
+          </Text>
+          <Text margin="1rem">
+            <a href="#roadmap" data-hover="Roadmap" px={3}>
+              Roadmap
+            </a>
+          </Text>
+          <Text margin="1rem">
+            <a href="#team" data-hover="Team" px={3}>
+              Team
+            </a>
+          </Text>
         </Flex>
         <Box display="flex" justifyContent="space-between">
           <Box display="flex" alignItems="center" ml={6}>
