@@ -105,8 +105,7 @@ export default function Introduction() {
             flexDirection={"column"}
             alignItems={"center"}
             backgroundColor={"white"}
-            borderRadius={"35px"}
-            padding={"20px"}
+            borderRadius={"35px"}            
             boxShadow={"2xl"}
             w={{ base: '40%', md: '40%', lg: '55%' }}
             padding={"25px"}
