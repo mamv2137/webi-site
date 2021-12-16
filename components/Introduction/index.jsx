@@ -1,6 +1,5 @@
 import React from "react";
 import { Box, Text, Image, Container, Flex } from "@chakra-ui/react";
-import { useMediaQuery } from "@chakra-ui/react";
 import { Chrono } from "react-chrono";
 import TeamCard from "../TeamCard";
 import BackgroundsBlobs from "../BackgroundsBlobs";
@@ -286,7 +285,7 @@ export default function Introduction() {
           boxShadow={"2xl"}
           marginBlockEnd={"80px"}
         >
-          <Box id="team" textAlign="center">
+          <Box id="team" textAlign="center" maxWidth={{ base: '50%', md: '50%', lg: '85%' }}>
             <Text
               padding={"8px 16px"}
               alignSelf={"start"}
@@ -304,8 +303,9 @@ export default function Introduction() {
             paddingBlockStart={"40px"}
             paddingBlockEnd={"40px"}
             display={"flex"}
-            justifyContent={"space-evenly"}
-            maxWidth={"95%"}
+            justifyContent={{ base: 'center', md: 'center', lg: 'space-evenly' }}
+            maxWidth={{ base: '50%', md: '60%', lg: '85%' }}
+            flexWrap={"wrap"}
             position={"relative"}
           >
             <BackgroundsBlobs />

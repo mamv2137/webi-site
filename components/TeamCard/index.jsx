@@ -16,6 +16,7 @@ export default function TeamCard(
         justifyContent={"center"}
         width={"160px"}
         height={"160px"}
+        margin="0.5rem"
         backgroundColor={"white"}
         borderRadius={"90px"}
         boxShadow={"2xl"}

@@ -5,7 +5,6 @@ import { BsDiscord, BsTwitter } from "react-icons/bs";
 import { GiHamburgerMenu } from "react-icons/Gi";
 import { GrClose } from "react-icons/Gr";
 
-
 function Header(props) {
   const [display, setDisplay] = useState("none");
 
@@ -35,7 +34,7 @@ function Header(props) {
           justify="space-between"
           w="16%"
           display={["none", "none", "flex", "flex"]}
-        > 
+        >
           <Text margin="1rem">
             <a href="#home" data-hover="Home" px={3}>
               Home
@@ -91,8 +90,28 @@ function Header(props) {
               onClick={() => setDisplay("none")}
             />
           </Flex>
-          <Flex flexDir="column" align="center">
-
+          <Flex
+            className="nav"
+            align="center"
+            justify="space-between"
+            w="16%"
+            display={["none", "none", "flex", "flex"]}
+          >
+            <Text margin="1rem">
+              <a href="#home" data-hover="Home" px={3}>
+                Home
+              </a>
+            </Text>
+            <Text margin="1rem">
+              <a href="#roadmap" data-hover="Roadmap" px={3}>
+                Roadmap
+              </a>
+            </Text>
+            <Text margin="1rem">
+              <a href="#team" data-hover="Team" px={3}>
+                Team
+              </a>
+            </Text>
           </Flex>
         </Flex>
       </Box>
