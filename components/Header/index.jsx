@@ -1,12 +1,12 @@
-import React, { useState } from "react";
-import { Box, Flex, Button, IconButton, Image, Text } from "@chakra-ui/react";
+import React, { useState } from 'react';
+import { Box, Flex, Button, IconButton, Image, Text } from '@chakra-ui/react';
 
-import { BsDiscord, BsTwitter } from "react-icons/bs";
-import { GiHamburgerMenu } from "react-icons/Gi";
-import { GrClose } from "react-icons/Gr";
+import { BsDiscord, BsTwitter } from 'react-icons/bs';
+import { GiHamburgerMenu } from 'react-icons/gi';
+import { GrClose } from 'react-icons/gr';
 
 function Header(props) {
-  const [display, setDisplay] = useState("none");
+  const [display, setDisplay] = useState('none');
 
   return (
     <>
@@ -20,8 +20,7 @@ function Header(props) {
         display="flex"
         justifyContent="space-between"
         alignItems="center"
-        zIndex={5}
-      >
+        zIndex={5}>
         <Image
           boxSize="220px"
           height="auto"
@@ -33,8 +32,7 @@ function Header(props) {
           align="center"
           justify="space-between"
           w="16%"
-          display={["none", "none", "flex", "flex"]}
-        >
+          display={['none', 'none', 'flex', 'flex']}>
           <Text margin="1rem">
             <a href="#home" data-hover="Home" px={3}>
               Home
@@ -65,8 +63,8 @@ function Header(props) {
           icon={<GiHamburgerMenu />}
           mr={2}
           size="xs"
-          display={["flex", "flex", "none", "none"]}
-          onClick={() => setDisplay("flex")}
+          display={['flex', 'flex', 'none', 'none']}
+          onClick={() => setDisplay('flex')}
         />
         <Flex
           w="100vw"
@@ -78,8 +76,7 @@ function Header(props) {
           left="0"
           overflowY="auto"
           flexDir="column"
-          display={display}
-        >
+          display={display}>
           <Flex justify="flex-end">
             <IconButton
               icon={<GrClose />}
@@ -87,7 +84,7 @@ function Header(props) {
               mr={2}
               aria-label="Close Menu"
               size="lg"
-              onClick={() => setDisplay("none")}
+              onClick={() => setDisplay('none')}
             />
           </Flex>
           <Flex
@@ -95,8 +92,7 @@ function Header(props) {
             align="center"
             justify="space-between"
             w="16%"
-            display={["none", "none", "flex", "flex"]}
-          >
+            display={['none', 'none', 'flex', 'flex']}>
             <Text margin="1rem">
               <a href="#home" data-hover="Home" px={3}>
                 Home
