@@ -1,68 +1,129 @@
 import React from "react";
-import { Box, Text, Image, Container, Flex } from "@chakra-ui/react";
-import { Chrono } from "react-chrono";
+import { Box, Text, Image, Container } from "@chakra-ui/react";
 import TeamCard from "../TeamCard";
-import BackgroundsBlobs from "../BackgroundsBlobs";
 import RoadMapBar from "../RoadMapBar";
-
-const items = [
-  {
-    title: "25%",
-    cardTitle: "Good stuff coming!",
-    cardSubtitle:
-      "Beginning of a parallel story, in this case we will take another collection from the neighboring city of Webitosland and thus get to know the beautiful Cuquitas",
-  },
-  {
-    title: "50%",
-    cardTitle: "MERCH!",
-    cardSubtitle:
-      "Launch of merchandise with your Webito to be fashionable in the coolest way (Airdrop free merch in a contest for the carriers of the Webitos and a safe Airdrop for those who have the animated Webitos)",
-  },
-  {
-    title: "75%",
-    cardTitle: "Some cool stories!",
-    cardSubtitle:
-      "We will create a Webitosverse comic and generate content often. And these comics will be generated NFT per page and will be distributed to Webitos holders (It's free NFT :D)",
-  },
-  {
-    title: "85%",
-    cardTitle: "Play with your Webito",
-    cardSubtitle:
-      "We will fund a play to earn game (liquidity pool) and all Webitos holders will be in the whitelist for the token presale",
-  },
-  {
-    title: "100%",
-    cardTitle: "Health and Webitos",
-    cardSubtitle:
-      "15% of all NFT sold will be donated to a nonprofit organization that treats prostate cancer where everyone as a community will vote and agree to contribute a grain of sand",
-  },
-];
+import RoadMap from "../RoadMap";
 
 export default function Introduction() {
   return (
     <>
       <Image
-        left={"-15%"}
-        top="4%"
-        opacity={"0.7"}
+        left={"-10%"}
+        top="10%"
+        opacity={"0.3"}
         zIndex={-2}
         position={"absolute"}
         boxSize="900px"
         height="auto"
         src="argolla_azul.png"
-        alt="Logo Webitos"
+        alt="Webitos"
       />
       <Image
         right={"-15%"}
         top="1%"
-        opacity={"0.6"}
+        opacity={"0.3"}
         zIndex={-2}
         position={"absolute"}
         boxSize="700px"
         height="auto"
         src="demon_rosa.png"
-        alt="Logo Webitos"
+        alt="Webitos"
         style={{ transform: "rotate(45deg)" }}
+      />
+      <Image
+        right={"0"}
+        top="80%"
+        opacity={"0.3"}
+        zIndex={-2}
+        position={"absolute"}
+        boxSize="400px"
+        height="auto"
+        src="shibari_azul.png"
+        alt="Webitos"
+        style={{ transform: "rotate(-99deg)" }}
+      />
+      <Image
+        right={"22%"}
+        top="10%"
+        opacity={"0.3"}
+        zIndex={-2}
+        position={"absolute"}
+        boxSize="500px"
+        height="auto"
+        src="shibari_azul.png"
+        alt="Webitos"
+        style={{ transform: "rotate(-45deg)" }}
+      />
+      <Image
+        bottom="-160%"
+        left={"0"}
+        opacity={"0.3"}
+        zIndex={-2}
+        position={"absolute"}
+        boxSize="500px"
+        height="auto"
+        src="shibari_azul.png"
+        alt="Webitos"
+        style={{ transform: "rotate(-115deg)" }}
+      />
+      <Image
+        bottom="-160%"
+        right={"0"}
+        opacity={"0.3"}
+        zIndex={-2}
+        position={"absolute"}
+        boxSize="500px"
+        height="auto"
+        src="cadena_rosa.png"
+        alt="Webitos"
+        style={{ transform: "rotate(60deg)" }}
+      />
+      <Image
+        bottom="-100%"
+        left={"0"}
+        opacity={"0.3"}
+        zIndex={-2}
+        position={"absolute"}
+        boxSize="700px"
+        height="auto"
+        src="anillo_rosa.png"
+        alt="Webitos"
+        style={{ transform: "rotate(-20deg)" }}
+      />
+      <Image
+        bottom="-100%"
+        right={"0"}
+        opacity={"0.3"}
+        zIndex={-2}
+        position={"absolute"}
+        boxSize="700px"
+        height="auto"
+        src="angel_azul.png"
+        alt="Webitos"
+        style={{ transform: "rotate(50deg)" }}
+      />
+      <Image
+        left={"-5%"}
+        bottom="-250%"
+        opacity={"0.3"}
+        zIndex={-2}
+        position={"absolute"}
+        boxSize="800px"
+        height="auto"
+        src="tattoo_rosa.png"
+        alt="Webitos"
+      />
+      <Image
+        right={"-5%"}
+        bottom="-250%"
+        opacity={"0.3"}
+        zIndex={-2}
+        position={"absolute"}
+        boxSize="800px"
+        height="auto"
+        src="demon_azul.png"
+        alt="Webitos"
+        style={{ transform: "rotate(50deg)" }}
       />
       <Container
         fontFamily={"Raleway"}
@@ -74,15 +135,17 @@ export default function Introduction() {
         flexDirection={"column"}
         marginTop={"35%"}
       >
-        <div style={{ marginTop: "-40px", paddingTop: "120px" }} id="home"></div>
-        <BackgroundsBlobs />
+        <div
+          style={{ marginTop: "-40px", paddingTop: "120px" }}
+          id="home"
+        ></div>
         <Container
           display="flex"
           justifyContent="space-evenly"
           maxWidth="95%"
           alignItems={"center"}
           flexWrap={"wrap"}
-          flexDirection={{ base: 'column', md: 'column', lg: 'row' }}
+          flexDirection={{ base: "column", md: "column", lg: "row" }}
         >
           <Box
             w={"35%"}
@@ -105,9 +168,9 @@ export default function Introduction() {
             flexDirection={"column"}
             alignItems={"center"}
             backgroundColor={"white"}
-            borderRadius={"35px"}            
+            borderRadius={"35px"}
             boxShadow={"2xl"}
-            w={{ base: '40%', md: '40%', lg: '55%' }}
+            w={{ base: "40%", md: "40%", lg: "55%" }}
             padding={"25px"}
             margin={"1rem"}
             flexWrap={"wrap"}
@@ -136,7 +199,7 @@ export default function Introduction() {
           display="flex"
           justifyContent="space-evenly"
           maxWidth="95%"
-          width={{ base: '33%', md: '66%', lg: '87%' }}
+          width={{ base: "33%", md: "66%", lg: "87%" }}
           flexWrap={"wrap"}
         >
           <Box
@@ -240,13 +303,15 @@ export default function Introduction() {
         <Container
           backgroundColor={"rgba(255, 255, 255, 0.9);"}
           borderRadius={"50px"}
-          padding={{ base: '4rem', md: '4rem', lg: '2rem' }}
+          padding={{ base: "4rem", md: "4rem", lg: "2rem" }}
           display={"flex"}
+          flexDirection={{ base: "column", md: "row", lg: "row" }}
           justifyContent={"center"}
           alignItems={"center"}
-          maxWidth={{ base: '60%', md: '60%', lg: '85%' }}
+          maxWidth={{ base: "60%", md: "60%", lg: "85%" }}
           marginTop={"5%"}
           boxShadow={"2xl"}
+          padding={{base: "10rem", md: "1rem", lg: "1rem"}}
         >
           <RoadMapBar />
           <Box
@@ -258,17 +323,10 @@ export default function Introduction() {
             height={"100%"}
             marginTop={"1%"}
           >
-            <BackgroundsBlobs />
-            <Chrono
-              theme={{
-                primary: "rgba(238, 143, 246, 0.8)",
-                secondary: "rgb(105, 43, 219)",
-              }}
-              items={items}
-              zIndex={-1}
-              mode="VERTICAL"
-              disableNavOnKey
-            />
+            <Text textAlign={"center"} fontSize={"38px"} marginLeft={["0","-35%"]} marginTop={["-150%", "0"]}>
+              Road Map
+            </Text>
+            <RoadMap />
           </Box>
         </Container>
         <Container
@@ -284,7 +342,11 @@ export default function Introduction() {
           boxShadow={"2xl"}
           marginBlockEnd={"80px"}
         >
-          <Box id="team" textAlign="center" maxWidth={{ base: '50%', md: '50%', lg: '85%' }}>
+          <Box
+            id="team"
+            textAlign="center"
+            maxWidth={{ base: "50%", md: "50%", lg: "85%" }}
+          >
             <Text
               padding={"8px 16px"}
               alignSelf={"start"}
@@ -302,12 +364,15 @@ export default function Introduction() {
             paddingBlockStart={"40px"}
             paddingBlockEnd={"40px"}
             display={"flex"}
-            justifyContent={{ base: 'center', md: 'center', lg: 'space-evenly' }}
-            maxWidth={{ base: '50%', md: '60%', lg: '85%' }}
+            justifyContent={{
+              base: "center",
+              md: "center",
+              lg: "space-evenly",
+            }}
+            maxWidth={{ base: "50%", md: "60%", lg: "85%" }}
             flexWrap={"wrap"}
             position={"relative"}
           >
-            <BackgroundsBlobs />
             <TeamCard name="Andresitos" image="team1.png" />
             <TeamCard name="Robertito" image="team2.png" />
             <TeamCard name="Gilsito" image="team3.png" />
