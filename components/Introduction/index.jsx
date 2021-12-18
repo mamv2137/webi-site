@@ -378,7 +378,7 @@ export default function Introduction() {
             position={"relative"}
           >
             <TeamCard
-              name="Andresitos"
+              name="Compota"
               image="team1.png"
               social={[
                 { name: "twitter", url: "https://twitter.com/compota89" },
@@ -395,7 +395,7 @@ export default function Introduction() {
               ]}
             />
             <TeamCard
-              name="Gilsito"
+              name="Giildev"
               image="team3.png"
               social={[
                 {
@@ -406,7 +406,7 @@ export default function Introduction() {
               ]}
             />
             <TeamCard
-              name="Frozonito"
+              name="Frozi"
               image="team4.png"
               social={[
                 {
@@ -420,7 +420,7 @@ export default function Introduction() {
               ]}
             />
             <TeamCard
-              name="Mauriito"
+              name="Nayarit"
               image="team5.png"
               social={[
                 { name: "twitter", url: "https://twitter.com/maudotjs" },
