@@ -1,15 +1,12 @@
 import React from "react";
 
 import { Box, Image, Text } from "@chakra-ui/react";
-import { BsDiscord, BsTwitter } from "react-icons/bs";
+import { BsDiscord, BsTwitter, BsLinkedin, BsInstagram } from "react-icons/bs";
 
-export default function TeamCard(
-  teamData = { name: "Nombrecito", image: "team1.png" }
-) {
+export default function TeamCard(teamData) {
   return (
     <>
       <Box
-        teamData={teamData}
         display={"flex"}
         flexDirection={"column"}
         alignItems={"center"}
@@ -39,12 +36,28 @@ export default function TeamCard(
           >
             <Text>{teamData.name}</Text>
             <Box display="flex">
-              <a href="#discord">
-                <BsDiscord />
-              </a>
-              <a href="#twitter">
-                <BsTwitter />
-              </a>
+              {teamData.social.map((social, index) => {
+                const SocialNetwork =
+                  social.name === "twitter" ? (
+                    <BsTwitter />
+                  ) : social.name === "discord" ? (
+                    <BsDiscord />
+                  ) : social.name === "linkedin" ? (
+                    <BsLinkedin />
+                  ) : social.name === "instagram" ? (
+                    <BsInstagram />
+                  ) : null;
+                return (
+                  <a
+                    target="_blank"
+                    key={`${index}-${social.name}`}
+                    href={social.url}
+                    rel="noreferrer"
+                  >
+                    {SocialNetwork}
+                  </a>
+                );
+              })}
             </Box>
           </Box>
         </div>

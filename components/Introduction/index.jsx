@@ -74,7 +74,10 @@ export default function Introduction() {
         flexDirection={"column"}
         marginTop={"35%"}
       >
-        <div style={{ marginTop: "-40px", paddingTop: "120px" }} id="home"></div>
+        <div
+          style={{ marginTop: "-40px", paddingTop: "120px" }}
+          id="home"
+        ></div>
         <BackgroundsBlobs />
         <Container
           display="flex"
@@ -82,7 +85,7 @@ export default function Introduction() {
           maxWidth="95%"
           alignItems={"center"}
           flexWrap={"wrap"}
-          flexDirection={{ base: 'column', md: 'column', lg: 'row' }}
+          flexDirection={{ base: "column", md: "column", lg: "row" }}
         >
           <Box
             w={"35%"}
@@ -105,9 +108,9 @@ export default function Introduction() {
             flexDirection={"column"}
             alignItems={"center"}
             backgroundColor={"white"}
-            borderRadius={"35px"}            
+            borderRadius={"35px"}
             boxShadow={"2xl"}
-            w={{ base: '40%', md: '40%', lg: '55%' }}
+            w={{ base: "40%", md: "40%", lg: "55%" }}
             padding={"25px"}
             margin={"1rem"}
             flexWrap={"wrap"}
@@ -136,7 +139,7 @@ export default function Introduction() {
           display="flex"
           justifyContent="space-evenly"
           maxWidth="95%"
-          width={{ base: '33%', md: '66%', lg: '87%' }}
+          width={{ base: "33%", md: "66%", lg: "87%" }}
           flexWrap={"wrap"}
         >
           <Box
@@ -240,11 +243,11 @@ export default function Introduction() {
         <Container
           backgroundColor={"rgba(255, 255, 255, 0.9);"}
           borderRadius={"50px"}
-          padding={{ base: '4rem', md: '4rem', lg: '2rem' }}
+          padding={{ base: "4rem", md: "4rem", lg: "2rem" }}
           display={"flex"}
           justifyContent={"center"}
           alignItems={"center"}
-          maxWidth={{ base: '60%', md: '60%', lg: '85%' }}
+          maxWidth={{ base: "60%", md: "60%", lg: "85%" }}
           marginTop={"5%"}
           boxShadow={"2xl"}
         >
@@ -284,7 +287,11 @@ export default function Introduction() {
           boxShadow={"2xl"}
           marginBlockEnd={"80px"}
         >
-          <Box id="team" textAlign="center" maxWidth={{ base: '50%', md: '50%', lg: '85%' }}>
+          <Box
+            id="team"
+            textAlign="center"
+            maxWidth={{ base: "50%", md: "50%", lg: "85%" }}
+          >
             <Text
               padding={"8px 16px"}
               alignSelf={"start"}
@@ -302,17 +309,65 @@ export default function Introduction() {
             paddingBlockStart={"40px"}
             paddingBlockEnd={"40px"}
             display={"flex"}
-            justifyContent={{ base: 'center', md: 'center', lg: 'space-evenly' }}
-            maxWidth={{ base: '50%', md: '60%', lg: '85%' }}
+            justifyContent={{
+              base: "center",
+              md: "center",
+              lg: "space-evenly",
+            }}
+            maxWidth={{ base: "50%", md: "60%", lg: "85%" }}
             flexWrap={"wrap"}
             position={"relative"}
           >
             <BackgroundsBlobs />
-            <TeamCard name="Andresitos" image="team1.png" />
-            <TeamCard name="Robertito" image="team2.png" />
-            <TeamCard name="Gilsito" image="team3.png" />
-            <TeamCard name="Frozonito" image="team4.png" />
-            <TeamCard name="Mauriito" image="team5.png" />
+            <TeamCard
+              name="Andresitos"
+              image="team1.png"
+              social={[
+                { name: "twitter", url: "https://twitter.com/compota89" },
+              ]}
+            />
+            <TeamCard
+              name="Robertito"
+              image="team2.png"
+              social={[
+                {
+                  name: "twitter",
+                  url: " https://twitter.com/RockinRobertart",
+                },
+              ]}
+            />
+            <TeamCard
+              name="Gilsito"
+              image="team3.png"
+              social={[
+                {
+                  name: "linkedin",
+                  url: " https://www.linkedin.com/in/giildev/",
+                },
+                { name: "twitter", url: "https://twitter.com/GiilDev" },
+              ]}
+            />
+            <TeamCard
+              name="Frozonito"
+              image="team4.png"
+              social={[
+                {
+                  name: "linkedin",
+                  url: " https://www.linkedin.com/in/josuadeveloper/",
+                },
+                {
+                  name: "instagram",
+                  url: "https://www.instagram.com/waramatofrozono/",
+                },
+              ]}
+            />
+            <TeamCard
+              name="Mauriito"
+              image="team5.png"
+              social={[
+                { name: "twitter", url: "https://twitter.com/maudotjs" },
+              ]}
+            />
           </Container>
         </Container>
       </Container>
