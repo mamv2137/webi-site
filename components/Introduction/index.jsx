@@ -158,7 +158,7 @@ export default function Introduction() {
               borderRadius={"35px"}
               boxSize="480px"
               height="auto"
-              src="gif.png"
+              src="wbitosGif.gif"
               alt="Gif Webitos"
               boxShadow={"xl"}
             />
