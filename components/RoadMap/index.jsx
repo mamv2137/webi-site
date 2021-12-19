@@ -1,7 +1,6 @@
 import React from "react";
 import { Text, Container } from "@chakra-ui/react";
 
-
 export default function index() {
   return (
     <Container marginTop={["130%", "0"]}>
@@ -9,56 +8,51 @@ export default function index() {
         <div className="outer">
           <div className="card">
             <div className="info">
-              <h3 className="title">Title 1</h3>
+              <h3 className="title">25% Sold</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.{" "}
+                Beginning of a parallel story, in this case we will take another
+                collection from the neighboring city of Webitosland and thus get
+                to know the beautiful Cuquitas
               </p>
             </div>
           </div>
           <div className="card">
             <div className="info">
-              <h3 className="title">Title 2</h3>
+              <h3 className="title">50% Sold</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.{" "}
+                Launch of merchandise with your Webito to be fashionable in the
+                coolest way (Airdrop free merch in a contest for the carriers of
+                the Webitos and a safe Airdrop for those who have the animated
+                Webitos)
               </p>
             </div>
           </div>
           <div className="card">
             <div className="info">
-              <h3 className="title">Title 3</h3>
+              <h3 className="title">75% Sold</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.{" "}
+                We will create a Webitosverse comic and generate content often.
+                And these comics will be generated NFT per page and will be
+                distributed to Webitos holders (It&apos;s free NFT: D)
               </p>
             </div>
           </div>
           <div className="card">
             <div className="info">
-              <h3 className="title">Title 4</h3>
+              <h3 className="title">85% Sold</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.{" "}
+                We will fund a play to earn game (liquidity pool) and all
+                Webitos holders will be in the whitelist for the token presale
               </p>
             </div>
           </div>
           <div className="card">
             <div className="info">
-              <h3 className="title">Title 5</h3>
+              <h3 className="title">100% Sold</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.{" "}
+                15% of all NFT sold will be donated to a nonprofit organization
+                that treats prostate cancer where everyone as a community will
+                vote and agree to contribute a grain of sand
               </p>
             </div>
           </div>
