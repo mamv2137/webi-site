@@ -5,7 +5,7 @@ import { BsDiscord, BsTwitter } from "react-icons/bs";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { GrClose } from "react-icons/gr";
 
-function Header(props) {
+function Header() {
   const [display, setDisplay] = useState("none");
 
   return (
@@ -14,11 +14,13 @@ function Header(props) {
         pos="fixed"
         bg="purple.600"
         w="100%"
-        p={4}
+        p={0}
+        paddingInlineEnd={[8, 4]}
+        paddingInlineStart={[8, 4]}
         color="whiteAlpha.800"
         boxShadow="lg"
         display="flex"
-        justifyContent="space-between"
+        justifyContent={["center", "space-around"]}
         alignItems="center"
         zIndex={5}
       >
@@ -53,11 +55,25 @@ function Header(props) {
         </Flex>
         <Box display="flex" justifyContent="space-between">
           <Box display="flex" alignItems="center" ml={6}>
-            <a target="_blank" href="" rel="noreferrer">
-              <Button className="btn rounded">
+            <Box
+              display="flex"
+              alignItems="center"
+              marginRight="12px"
+              position={"relative"}
+            >
+              <a
+                className="btn rounded"
+                target="_blank"
+                href=""
+                rel="noreferrer"
+              >
                 <span className="text">Open Sea</span>
-              </Button>
-            </a>
+              </a>
+              <div className="ballContainer">
+                <span className="ball ball1"></span>
+                <span className="ball ball2"></span>
+              </div>
+            </Box>
             <a
               target="_blank"
               href="https://discord.gg/cTaXdqFMjG"
@@ -90,11 +106,46 @@ function Header(props) {
           flexDir="column"
           display={display}
         >
-          <Flex justify="flex-end">
+          <Flex
+            justify="center"
+            alignItems={"center"}
+            flexDirection={"column"}
+            height={"100vh"}
+            bg="purple.600"
+          >
+            <Text
+              color={"white"}
+              fontWeight={"600"}
+              margin="1rem"
+              onClick={() => setDisplay("none")}
+            >
+              <a href="#home" data-hover="Home" px={3}>
+                Home
+              </a>
+            </Text>
+            <Text
+              color={"white"}
+              fontWeight={"600"}
+              margin="1rem"
+              onClick={() => setDisplay("none")}
+            >
+              <a href="#roadmap" data-hover="Roadmap" px={3}>
+                Roadmap
+              </a>
+            </Text>
+            <Text
+              color={"white"}
+              fontWeight={"600"}
+              margin="1rem"
+              onClick={() => setDisplay("none")}
+            >
+              <a href="#team" data-hover="Team" px={3}>
+                Team
+              </a>
+            </Text>
             <IconButton
-              icon={<GrClose />}
-              mt={2}
-              mr={2}
+              icon={<GrClose borderRadius={"50px"} />}
+              color={"white"}
               aria-label="Close Menu"
               size="lg"
               onClick={() => setDisplay("none")}
