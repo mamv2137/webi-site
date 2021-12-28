@@ -21,11 +21,12 @@ function Header() {
         boxShadow="lg"
         display="flex"
         justifyContent={["center", "space-around"]}
+        flexWrap={['wrap', 'nowrap', 'nowrap']}
         alignItems="center"
         zIndex={5}
       >
         <Image
-          boxSize="220px"
+          width={['160px', '220px']}
           height="auto"
           src="logo_webitos.png"
           alt="Logo Webitos"
@@ -90,6 +91,7 @@ function Header() {
           aria-label="Open Menu"
           icon={<GiHamburgerMenu />}
           mr={2}
+          ml={2}
           size="xs"
           display={["flex", "flex", "none", "none"]}
           onClick={() => setDisplay("flex")}

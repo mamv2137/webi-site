@@ -4,7 +4,7 @@ import { Text, Container } from "@chakra-ui/react";
 
 export default function index() {
   return (
-    <Container marginTop={["130%", "0"]}>
+    <Container marginTop="0">
       <div className="timeline">
         <div className="outer">
           <div className="card">
