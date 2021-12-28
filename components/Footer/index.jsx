@@ -8,11 +8,11 @@ function Footer() {
         p={5}
         bg="purple.800"
         w="100%"
-        justifyContent="space-between"
+        justifyContent="center"
         align="center"
         color="white"
       >
-        <p className="copyrightDisclaimer">@2021 Genis NFT</p>
+        <p className="copyrightDisclaimer">@2021 Klipp Studio</p>
       </Flex>
     </>
   );

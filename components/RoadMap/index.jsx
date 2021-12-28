@@ -56,6 +56,16 @@ export default function index() {
               </p>
             </div>
           </div>
+          <div className="card">
+            <div className="info">
+              <h3 className="title">Royalties</h3>
+              <p>
+                We are going to allocate 50% of all royalties for donations that
+                all of us in the community decide that fits the purpose of this
+                project
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </Container>
