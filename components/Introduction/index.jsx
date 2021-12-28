@@ -242,7 +242,7 @@ export default function Introduction() {
           backgroundColor={"rgba(255, 255, 255, 0.9);"}
           borderRadius={"50px"}
           display={"flex"}
-          flexDirection={{ base: "column", md: "row", lg: "row" }}
+          flexDirection={{ base: "column-reverse", md: "row", lg: "row" }}
           justifyContent={"center"}
           alignItems={"center"}
           maxWidth={{ base: "60%", md: "60%", lg: "85%" }}
@@ -264,7 +264,7 @@ export default function Introduction() {
               textAlign={"center"}
               fontSize={"38px"}
               marginLeft={["0", "-35%"]}
-              marginTop={["-150%", "0"]}
+              marginTop="0"
             >
               Road Map
             </Text>
