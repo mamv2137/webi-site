@@ -3,128 +3,12 @@ import { Box, Text, Image, Container } from "@chakra-ui/react";
 import TeamCard from "../TeamCard";
 import RoadMapBar from "../RoadMapBar";
 import RoadMap from "../RoadMap";
+import BackgroundWebitos from "../BackgroundWebitos";
 
 export default function Introduction() {
   return (
     <>
-      <Image
-        left={"-10%"}
-        top="10%"
-        opacity={"0.3"}
-        zIndex={-2}
-        position={"absolute"}
-        boxSize="900px"
-        height="auto"
-        src="argolla_azul.png"
-        alt="Webitos"
-      />
-      <Image
-        right={"-15%"}
-        top="1%"
-        opacity={"0.3"}
-        zIndex={-2}
-        position={"absolute"}
-        boxSize="700px"
-        height="auto"
-        src="demon_rosa.png"
-        alt="Webitos"
-        style={{ transform: "rotate(45deg)" }}
-      />
-      <Image
-        right={"0"}
-        top="80%"
-        opacity={"0.3"}
-        zIndex={-2}
-        position={"absolute"}
-        boxSize="400px"
-        height="auto"
-        src="shibari_azul.png"
-        alt="Webitos"
-        style={{ transform: "rotate(-99deg)" }}
-      />
-      <Image
-        right={"22%"}
-        top="10%"
-        opacity={"0.3"}
-        zIndex={-2}
-        position={"absolute"}
-        boxSize="500px"
-        height="auto"
-        src="shibari_azul.png"
-        alt="Webitos"
-        style={{ transform: "rotate(-45deg)" }}
-      />
-      <Image
-        bottom="-160%"
-        left={"0"}
-        opacity={"0.3"}
-        zIndex={-2}
-        position={"absolute"}
-        boxSize="500px"
-        height="auto"
-        src="shibari_azul.png"
-        alt="Webitos"
-        style={{ transform: "rotate(-115deg)" }}
-      />
-      <Image
-        bottom="-160%"
-        right={"0"}
-        opacity={"0.3"}
-        zIndex={-2}
-        position={"absolute"}
-        boxSize="500px"
-        height="auto"
-        src="cadena_rosa.png"
-        alt="Webitos"
-        style={{ transform: "rotate(60deg)" }}
-      />
-      <Image
-        bottom="-100%"
-        left={"0"}
-        opacity={"0.3"}
-        zIndex={-2}
-        position={"absolute"}
-        boxSize="700px"
-        height="auto"
-        src="anillo_rosa.png"
-        alt="Webitos"
-        style={{ transform: "rotate(-20deg)" }}
-      />
-      <Image
-        bottom="-100%"
-        right={"0"}
-        opacity={"0.3"}
-        zIndex={-2}
-        position={"absolute"}
-        boxSize="700px"
-        height="auto"
-        src="angel_azul.png"
-        alt="Webitos"
-        style={{ transform: "rotate(50deg)" }}
-      />
-      <Image
-        left={"-5%"}
-        bottom="-250%"
-        opacity={"0.3"}
-        zIndex={-2}
-        position={"absolute"}
-        boxSize="800px"
-        height="auto"
-        src="tattoo_rosa.png"
-        alt="Webitos"
-      />
-      <Image
-        right={"-5%"}
-        bottom="-250%"
-        opacity={"0.3"}
-        zIndex={-2}
-        position={"absolute"}
-        boxSize="800px"
-        height="auto"
-        src="demon_azul.png"
-        alt="Webitos"
-        style={{ transform: "rotate(50deg)" }}
-      />
+      <BackgroundWebitos />
       <Container
         fontFamily={"Raleway"}
         paddingInlineEnd={"0"}
@@ -172,25 +56,51 @@ export default function Introduction() {
             boxShadow={"2xl"}
             w={{ base: "36%", md: "40%", lg: "55%" }}
             padding={"25px"}
-            margin={"1rem"}
+            margin={"0.5rem"}
             flexWrap={"wrap"}
           >
-            <Image
-              boxSize="350px"
-              height="auto"
-              src="logo_webitos.png"
-              alt="Logo Webitos"
-            />
-            <Text padding={"8px 16px"} fontSize={"4xl"} fontWeight={"800"}>
-              Rarity of Webitos
+            <Text padding={"8px 16px"} fontSize={"sm"}>
+              Webitos is a collection of 6969 unique lovable members generated
+              with multiple accessories, naughty and cute.
             </Text>
             <Text padding={"8px 16px"} fontSize={"sm"}>
-              Each Webito is completely unique but they are decorated in
-              multiple ways, each with its mischief and beauty in the Webitos
-              universe Some like it simple, after all less is more! They go
-              through life radiating good vibes, expressing freedom with their
-              style, with confidence in themselves and their only rule is to
-              have a good time.
+              All NFTs are listed on OpenSea at a starting price of 0.0069 ETH
+              (Polygon), meaning that there are no different prices due to
+              rarity, only those Rockstars Webitos that are beyond Webitosland
+              are animated to commemorate pop culture numbers.
+            </Text>
+            <Text padding={"8px 16px"} fontSize={"sm"}>
+              Webitos is a project to create awareness about two great problems
+              that we live in these times
+            </Text>
+            <Text padding={"8px 16px"} fontSize={"sm"}>
+              Like prostate cancer that each year takes around 350k + men, being
+              the second most frequent malicious cancer (before lung cancer) in
+              men worldwide, every year we have more than 1.4 million new cases,
+              it is a problem but not everything is bad news, the survival rate
+              with the correct treatment is very high and early detection almost
+              always ends in a happy story, in the same way it is a problem that
+              we can contribute to solve as a community saving a life with Art
+              and Technology with NFTs and the blockchain
+            </Text>
+            <Text padding={"8px 16px"} fontSize={"sm"}>
+              Another problem that we are experiencing lately is the
+              stigmatization of the virile member, where it has been given a
+              negative cognotation, with disqualifying adjectives such as
+              Violent, Violator, disgusting, ugly, intrusive, micro, small,
+              huge, skinny, fat, etc.
+            </Text>
+            <Text padding={"8px 16px"} fontSize={"sm"}>
+              This creates psychological complexes in many and talking about it
+              always becomes an uncomfortable situation, taking some to the
+              extreme of not even wanting to have sexual contact because of
+              this.
+            </Text>
+            <Text padding={"8px 16px"} fontSize={"sm"}>
+              We want to imply with this project that a PP does not represent
+              the evil acts of some penis owners and that all lil D&apos;s are
+              unique and beautiful in their own way. Be proud of yourself and
+              love your body
             </Text>
           </Box>
         </Container>
@@ -198,26 +108,33 @@ export default function Introduction() {
           paddingBlockStart="70px"
           display="flex"
           justifyContent="space-evenly"
-          maxWidth="95%"
+          maxWidth="100%"
           width={{ base: "33%", md: "66%", lg: "87%" }}
           flexWrap={"wrap"}
         >
+          <Text padding={"8px 16px"} fontSize={"4xl"} fontWeight={"800"}>
+            Rarity of Webitos
+          </Text>
+          <Text padding={"8px 16px"} fontSize={"sm"}>
+            Each Webito is completely unique but they are decorated in multiple
+            ways, each with its mischief and beauty in the Webitos universe
+          </Text>
           <Box
             display={"flex"}
             flexDirection={"column"}
             backgroundColor={"white"}
             borderRadius={"35px"}
-            padding={"20px"}
-            margin={"1rem"}
+            padding={"10px"}
+            margin={"0.5rem"}
             boxShadow={"2xl"}
           >
             <Text
-              padding={"8px 16px"}
-              alignSelf={"start"}
+              padding={"4px 18px"}
+              alignSelf={"center"}
               fontSize={"xx-large"}
               fontWeight={"700"}
             >
-              Rarity of Webitos
+              Basic
             </Text>
             <Text
               padding={"8px 16px"}
@@ -225,12 +142,10 @@ export default function Introduction() {
               w={"100%"}
               maxWidth={"300px"}
             >
-              When a Webito wants to stand out he always does it in an
-              extravagant way, you could be a rebel with piercings, tattoos or
-              accessories that will never go out of style fashion, raise catch
-              the eyes eye of other Webitos with your their o use your luego de
-              un . es decir: . catch the eye of other Webitos with your unique
-              style
+              Some like it simple, after all less is more! They go through life
+              radiating good vibes, expressing freedom with their style, with
+              confidence in themselves and their only rule is to have a good
+              time.
             </Text>
           </Box>
           <Box
@@ -240,22 +155,45 @@ export default function Introduction() {
             backgroundColor={"white"}
             borderRadius={"35px"}
             padding={"20px"}
-            margin={"1rem"}
+            margin={"0.5rem"}
             boxShadow={"2xl"}
           >
-            <Image
-              boxSize="100px"
-              height="auto"
-              src="head.png"
-              alt="Gif Webitos"
-            />
             <Text
-              padding={"8px 16px"}
-              alignSelf={"start"}
+              padding={"4px 18px"}
+              alignSelf={"center"}
               fontSize={"xx-large"}
               fontWeight={"700"}
             >
-              Rarity of Webitos
+              Accesories
+            </Text>
+            <Text
+              padding={"8px 16px"}
+              fontSize={"sm"}
+              w={"100%"}
+              maxWidth={"300px"}
+            >
+              When a Webito wants to stand out he always does it in an
+              extravagant way, you could be a rebel with piercings, tattoos or
+              accessories that will never go out of fashion, catch the eye of
+              other Webitos with your unique style
+            </Text>
+          </Box>
+          <Box
+            display={"flex"}
+            flexDirection={"column"}
+            backgroundColor={"white"}
+            borderRadius={"35px"}
+            padding={"10px"}
+            margin={"0.5rem"}
+            boxShadow={"2xl"}
+          >
+            <Text
+              padding={"4px 18px"}
+              alignSelf={"center"}
+              fontSize={"xx-large"}
+              fontWeight={"700"}
+            >
+              Wild
             </Text>
             <Text
               padding={"8px 16px"}
@@ -273,17 +211,17 @@ export default function Introduction() {
             flexDirection={"column"}
             backgroundColor={"white"}
             borderRadius={"35px"}
-            padding={"20px"}
-            margin={"1rem"}
+            padding={"10px"}
+            margin={"0.5rem"}
             boxShadow={"2xl"}
           >
             <Text
-              padding={"8px 16px"}
-              alignSelf={"start"}
+              padding={"4px 18px"}
+              alignSelf={"center"}
               fontSize={"xx-large"}
               fontWeight={"700"}
             >
-              Rarity of Webitos
+              Superstar
             </Text>
             <Text
               padding={"8px 16px"}
@@ -360,8 +298,10 @@ export default function Introduction() {
               Team
             </Text>
             <Text padding={"8px 16px"} fontSize={"sm"}>
-              Members info Members info Members info Members info Members info
-              Members info
+              We are a group of friends from the university who have worked on
+              multiple projects and now we are very involved in the entire
+              blockchain ecosystem creating new products and supporting other
+              communities
             </Text>
           </Box>
           <Container
@@ -385,7 +325,7 @@ export default function Introduction() {
               ]}
             />
             <TeamCard
-              name="Robertito"
+              name="RockinRobert"
               image="team2.png"
               social={[
                 {
@@ -420,7 +360,7 @@ export default function Introduction() {
               ]}
             />
             <TeamCard
-              name="Nayarit"
+              name="Mauro"
               image="team5.png"
               social={[
                 { name: "twitter", url: "https://twitter.com/maudotjs" },
