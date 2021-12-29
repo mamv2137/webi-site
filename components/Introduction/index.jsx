@@ -298,8 +298,10 @@ export default function Introduction() {
               Team
             </Text>
             <Text padding={"8px 16px"} fontSize={"sm"}>
-              Members info Members info Members info Members info Members info
-              Members info
+              We are a group of friends from the university who have worked on
+              multiple projects and now we are very involved in the entire
+              blockchain ecosystem creating new products and supporting other
+              communities
             </Text>
           </Box>
           <Container
