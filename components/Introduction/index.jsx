@@ -170,7 +170,7 @@ export default function Introduction() {
             backgroundColor={"white"}
             borderRadius={"35px"}
             boxShadow={"2xl"}
-            w={{ base: "40%", md: "40%", lg: "55%" }}
+            w={{ base: "36%", md: "40%", lg: "55%" }}
             padding={"25px"}
             margin={"1rem"}
             flexWrap={"wrap"}
