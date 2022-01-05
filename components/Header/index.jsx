@@ -146,7 +146,7 @@ function Header() {
               </a>
             </Text>
             <IconButton
-              icon={<GrClose borderRadius={"50px"} />}
+              icon={<GrClose borderRadius={"50px"} stroke="white" fill="white" />}
               color={"white"}
               aria-label="Close Menu"
               size="lg"

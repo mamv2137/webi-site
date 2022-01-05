@@ -11,6 +11,7 @@ export default function RoadMapBar() {
     flexDirection={["flex", "column"]}
     boxShadow={["none", "xl"]}
     flexWrap={"wrap"}
+    maxWidth={["70%","95%","95%"]}
   >
     <div
       className="roadmap2"
