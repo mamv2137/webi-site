@@ -169,6 +169,12 @@ a {
   opacity: 1;
   left: 98%;
 }
+
+@media only screen and (max-width: 48em) {
+  .btn.rounded:hover + .ballContainer {
+    left: 88%;
+  }
+}
 /* fill roadmap animation */ 
 
 .mobileMenu {
@@ -652,4 +658,11 @@ a {
 /* setting dot to the right if the card is odd */
 .card:nth-child(even) > .info > .title::before {
   right: -87px;
+}
+
+.webiHome {
+  transition: all .2s;
+}
+.webiHome:hover {
+  transform: scale(105%);
 }

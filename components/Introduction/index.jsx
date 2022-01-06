@@ -12,21 +12,18 @@ export default function Introduction() {
       <Container
         fontFamily={"Raleway"}
         paddingInlineEnd={"0"}
-        maxWidth={["70%","95%","95%"]}
+        maxWidth={["70%", "95%", "95%"]}
         minWidth={"1336px"}
         display={"flex"}
         flexWrap={"wrap"}
         flexDirection={"column"}
         marginTop={["55%", "35%", "35%"]}
       >
-        <div
-          style={{ marginTop: "-40px"}}
-          id="home"
-        ></div>
+        <div style={{ marginTop: "-40px" }} id="home"></div>
         <Container
           display="flex"
           justifyContent="space-evenly"
-          maxWidth={["70%","95%","95%"]}
+          maxWidth={["70%", "95%", "95%"]}
           alignItems={"center"}
           flexWrap={"wrap"}
           flexDirection={{ base: "column", md: "column", lg: "row" }}
@@ -60,7 +57,11 @@ export default function Introduction() {
             flexWrap={"wrap"}
           >
             <h1>Welcome to Webitos Project</h1>
-            <Text padding={"8px 16px"} fontSize={"medium"} position={"relative"}>
+            <Text
+              padding={"8px 16px"}
+              fontSize={"medium"}
+              position={"relative"}
+            >
               Webitos is a collection of <span>6969</span> unique lovable
               members generated with multiple accessories, naughty and cute.
             </Text>
@@ -83,20 +84,21 @@ export default function Introduction() {
             margin={"1.2rem"}
             flexWrap={"wrap"}
           >
-            <Text padding={"8px 16px"} fontSize={"medium"} position={"relative"}>
-              <h2>We belive in PP awerness</h2>
-              Webitos is a project to create awareness about two great problems
-              that we live in these times
-            </Text>
-            <Text padding={"8px 16px"} fontSize={"medium"}>
-              Like prostate cancer that each year takes around 350k + men, being
-              the second most frequent malicious cancer (before lung cancer) in
-              men worldwide, every year we have more than 1.4 million new cases,
-              it is a problem but not everything is bad news, the survival rate
-              with the correct treatment is very high and early detection almost
-              always ends in a happy story, in the same way it is a problem that
-              we can contribute to solve as a community saving a life with Art
-              and Technology with NFTs and the blockchain
+            <Text
+              padding={"8px 32px"}
+              fontSize={"medium"}
+              position={"relative"}
+            >
+              <h2>We belive in PP awareness</h2>
+              Webitos is a project that seeks to raise awareness for prostate
+              cancer, each year it takes the lives of around 350k + men
+              worldwide, being the second most frequent malicious cancer (before
+              lung cancer), every year there is more than 1.4 million new cases,
+              the survival rate with the correct treatment is very high and
+              early detection almost always ends in a happy story, it is a
+              problem that we can help to solve as a community spreading
+              information with Art art and blockchain technology can help save
+              lives!
             </Text>
           </Box>
           <Box
@@ -111,43 +113,66 @@ export default function Introduction() {
             margin={"1.2rem"}
             flexWrap={"wrap"}
           >
-            <Text padding={"8px 16px"} fontSize={"medium"}>
-              Another problem that we are experiencing lately is the
-              stigmatization of the virile member, where it has been given a
-              negative cognotation, with disqualifying adjectives such as
-              Violent, Violator, disgusting, ugly, intrusive, micro, small,
-              huge, skinny, fat, etc.
-            </Text>
-            <Text padding={"8px 16px"} fontSize={"medium"}>
-              This creates psychological complexes in many and talking about it
-              always becomes an uncomfortable situation, taking some to the
-              extreme of not even wanting to have sexual contact because of
-              this.
+            <Text padding={"8px 32px"} fontSize={"medium"}>
+              <h2>No toxic masculinity!</h2>
+              We want to make a statement against the stigmatization of the
+              virile member, male bodied individuals are responsible for many
+              evil acts and we want to add our voice to their condemnation, our
+              collection makes a showcase of a multitude of friendly lil D's
+              that spread only good times and positivity. All webitos are unique
+              and beautiful in their own way, we encourage you to be proud of
+              yourself and love your body!!
             </Text>
           </Box>
           <Box
             display={"flex"}
-            flexDirection={["column", 'column', 'row']}
+            flexDirection={["column", "column", "row"]}
+            justifyContent={"center"}
             alignItems={"center"}
             backgroundColor={"white"}
             borderRadius={"35px"}
             boxShadow={"2xl"}
-            w={"95vw"}
+            w={'auto'}
             padding={"25px"}
             margin={"1.2rem"}
-          > 
-            <Text padding={"8px 16px"} fontSize={"medium"}>
-              <h2>We belive in PP awerness</h2>
-              We want to imply with this project that a PP does not represent
-              the evil acts of some penis owners and that all lil D&apos;s are
-              unique and beautiful in their own way. Be proud of yourself and
-              love your body
-            </Text>
+            flexWrap={['wrap', 'nowrap']}
+          >
             <Image
+              className="webiHome"
               borderRadius={"35px"}
-              boxSize="280px"
+              boxSize="230px"
               height="auto"
-              src="wbitosGif.gif"
+              src="34.png"
+              alt="Gif Webitos"
+              margin={"1rem"}
+              boxShadow={"xl"}
+            />
+            <Image
+              className="webiHome" 
+              borderRadius={"35px"}
+              boxSize="230px"
+              height="auto"
+              src="177.png"
+              alt="Gif Webitos"
+              margin={"1rem"}
+              boxShadow={"xl"}
+            />
+            <Image
+              className="webiHome"
+              borderRadius={"35px"}
+              boxSize="230px"
+              height="auto"
+              src="201.png"
+              alt="Gif Webitos"
+              margin={"1rem"}
+              boxShadow={"xl"}
+            />
+            <Image
+              className="webiHome"
+              borderRadius={"35px"}
+              boxSize="230px"
+              height="auto"
+              src="390.png"
               alt="Gif Webitos"
               margin={"1rem"}
               boxShadow={"xl"}
@@ -158,7 +183,7 @@ export default function Introduction() {
           paddingBlockStart="70px"
           display="flex"
           justifyContent="center"
-          maxWidth={["30%","95%","95%"]}
+          maxWidth={["30%", "95%", "95%"]}
           flexWrap={"wrap"}
         >
           <Box
@@ -176,7 +201,7 @@ export default function Introduction() {
             <h1 padding={["8px", "8px 16px"]} fontSize={"4xl"}>
               Rarity of Webitos
             </h1>
-            <Text padding={"16px 40px"} fontSize={"medium"}>
+            <Text padding={"16px 8px"} fontSize={"medium"}>
               Each Webito is completely unique but they are decorated in
               multiple ways, each with its mischief and beauty in the Webitos
               universe
@@ -190,7 +215,7 @@ export default function Introduction() {
             padding={"10px"}
             margin={"1.2rem"}
             boxShadow={"5xl"}
-            width={['95vw', '95vw', ' 27vw']}
+            width={["95vw", "95vw", " 27vw"]}
           >
             <Text
               padding={"4px 18px"}
@@ -217,7 +242,7 @@ export default function Introduction() {
             padding={"20px"}
             margin={"1.2rem"}
             boxShadow={"2xl"}
-            width={['95vw', '95vw', ' 27vw']}
+            width={["95vw", "95vw", " 27vw"]}
           >
             <Text
               padding={"4px 18px"}
@@ -243,7 +268,7 @@ export default function Introduction() {
             padding={"10px"}
             margin={"1.2rem"}
             boxShadow={"2xl"}
-            width={['95vw', '95vw', ' 27vw']}
+            width={["95vw", "95vw", " 27vw"]}
           >
             <Text
               padding={"4px 18px"}
@@ -268,7 +293,7 @@ export default function Introduction() {
             padding={"10px"}
             margin={"1.2rem"}
             boxShadow={"2xl"}
-            width={['95vw', '95vw', ' 27vw']}
+            width={["95vw", "95vw", " 27vw"]}
           >
             <Text
               padding={"4px 18px"}
@@ -296,7 +321,7 @@ export default function Introduction() {
           flexDirection={{ base: "column-reverse", md: "row", lg: "row" }}
           justifyContent={"center"}
           alignItems={"center"}
-          maxWidth={["70%","95%","95%"]}
+          maxWidth={["70%", "95%", "95%"]}
           marginTop={"5%"}
           boxShadow={"2xl"}
           padding={{ base: "0 11rem", md: "1rem", lg: "1rem" }}
@@ -331,7 +356,7 @@ export default function Introduction() {
           flexDirection={"column"}
           justifyContent={"center"}
           alignItems={"center"}
-          maxWidth={["27%","95%","95%"]}
+          maxWidth={["27%", "55%", "95%"]}
           marginTop={"5%"}
           boxShadow={"2xl"}
           marginBlockEnd={"80px"}
@@ -345,7 +370,7 @@ export default function Introduction() {
               padding={"8px 16px"}
               alignSelf={"start"}
               fontSize={"4xl"}
-              fontFamily={'Pacifico'}
+              fontFamily={"Pacifico"}
             >
               Team
             </Text>
@@ -365,7 +390,7 @@ export default function Introduction() {
               md: "center",
               lg: "space-evenly",
             }}
-            maxWidth={["70%","95%","95%"]}
+            maxWidth={["70%", "95%", "95%"]}
             flexWrap={"wrap"}
             position={"relative"}
           >
