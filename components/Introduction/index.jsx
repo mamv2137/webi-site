@@ -132,10 +132,10 @@ export default function Introduction() {
             backgroundColor={"white"}
             borderRadius={"35px"}
             boxShadow={"2xl"}
-            w={'auto'}
+            w={"auto"}
             padding={"25px"}
             margin={"1.2rem"}
-            flexWrap={['wrap', 'nowrap']}
+            flexWrap={["wrap", "nowrap"]}
           >
             <Image
               className="webiHome"
@@ -148,7 +148,7 @@ export default function Introduction() {
               boxShadow={"xl"}
             />
             <Image
-              className="webiHome" 
+              className="webiHome"
               borderRadius={"35px"}
               boxSize="230px"
               height="auto"
@@ -202,14 +202,17 @@ export default function Introduction() {
               Rarity of Webitos
             </h1>
             <Text padding={"16px 8px"} fontSize={"medium"}>
-              Each Webito is completely unique but they are decorated in
-              multiple ways, each with its mischief and beauty in the Webitos
-              universe
+              Each Webito is completely unique, they are decorated in multiple
+              ways, each with their own charm and beauty in the Webitos
+              universe.
             </Text>
           </Box>
           <Box
+            minHeight={"400px"}
             display={"flex"}
+            alignItems={"center"}
             flexDirection={"column"}
+            justifyContent={"center"}
             backgroundColor={"white"}
             borderRadius={"35px"}
             padding={"10px"}
@@ -226,15 +229,34 @@ export default function Introduction() {
             >
               Basic
             </Text>
-            <Text padding={"8px 22px"} fontSize={"medium"} w={"100%"}>
+            <Image
+              className="webiHome"
+              borderRadius={"35px"}
+              boxSize="230px"
+              height="auto"
+              src="basic.png"
+              alt="Basic"
+              margin={"1rem"}
+              boxShadow={"xl"}
+            />
+            <Text padding={"8px 22px"} fontSize={"medium"}>
               Some like it simple, after all less is more! They go through life
               radiating good vibes, expressing freedom with their style, with
-              confidence in themselves and their only rule is to have a good
-              time.
+              confidence in themselves. Their only rule is to have a good time.
+            </Text>
+            <Text
+              padding={"8px 22px"}
+              fontFamily={"Pacifico"}
+              textAlign={"center"}
+              fontSize={"2xl"}
+            >
+              Rarity: 🍆
             </Text>
           </Box>
           <Box
+            minHeight={"400px"}
             display={"flex"}
+            justifyContent={"center"}
             flexDirection={"column"}
             alignItems={"center"}
             backgroundColor={"white"}
@@ -253,15 +275,35 @@ export default function Introduction() {
             >
               Accesories
             </Text>
-            <Text padding={"8px 22px"} fontSize={"medium"} w={"100%"}>
-              When a Webito wants to stand out he always does it in an
-              extravagant way, you could be a rebel with piercings, tattoos or
-              accessories that will never go out of fashion, catch the eye of
-              other Webitos with your unique style
+            <Image
+              className="webiHome"
+              borderRadius={"35px"}
+              boxSize="230px"
+              height="auto"
+              src="accesories.png"
+              alt="accesories"
+              margin={"1rem"}
+              boxShadow={"xl"}
+            />
+            <Text padding={"8px 22px"} fontSize={"medium"}>
+              Some Webitos like to stand out in an extravagant way they build
+              their unique style with piercings, tattoos, and accessories to
+              catch the eye of other Webitos.
+            </Text>
+            <Text
+              padding={"8px 22px"}
+              fontFamily={"Pacifico"}
+              textAlign={"center"}
+              fontSize={"2xl"}
+            >
+              Rarity: 🍆🍆
             </Text>
           </Box>
           <Box
+            minHeight={"400px"}
             display={"flex"}
+            alignItems={"center"}
+            justifyContent={"center"}
             flexDirection={"column"}
             backgroundColor={"white"}
             borderRadius={"35px"}
@@ -279,14 +321,35 @@ export default function Introduction() {
             >
               Wild
             </Text>
-            <Text padding={"8px 22px"} fontSize={"medium"} w={"100%"}>
-              There are Webitos that are beyond their objectives, being great
-              executives in the Webitostock by day and savage by night where
-              modesty and taboo do not exist
+            <Image
+              className="webiHome"
+              borderRadius={"35px"}
+              boxSize="230px"
+              height="auto"
+              src="wild.png"
+              alt="wild"
+              margin={"1rem"}
+              boxShadow={"xl"}
+            />
+            <Text padding={"8px 22px"} fontSize={"medium"}>
+              There are ambicious Webitos with big objectives, they are great
+              executives in the Webitostock they wear suits by day and forget
+              about modesty and taboo by night.
+            </Text>
+            <Text
+              padding={"8px 22px"}
+              fontFamily={"Pacifico"}
+              textAlign={"center"}
+              fontSize={"2xl"}
+            >
+              Rarity: 🍆🍆🍆
             </Text>
           </Box>
           <Box
+            minHeight={"400px"}
             display={"flex"}
+            alignItems={"center"}
+            justifyContent={"center"}
             flexDirection={"column"}
             backgroundColor={"white"}
             borderRadius={"35px"}
@@ -304,12 +367,29 @@ export default function Introduction() {
             >
               Superstar
             </Text>
-            <Text padding={"8px 22px"} fontSize={"medium"} w={"100%"}>
+            <Image
+              className="webiHome"
+              borderRadius={"35px"}
+              boxSize="230px"
+              height="auto"
+              src="angel.gif"
+              alt="angel"
+              margin={"1rem"}
+              boxShadow={"xl"}
+            />
+            <Text padding={"8px 22px"} fontSize={"medium"}>
               The superstar Webitos are recognized by everyone in Webitosland,
-              it is impossible not to notice when one of them comes out, they
-              are the only Webitos that symbolize the most exotic in their own
-              careers, they are seen as Angels or Demons, Rockstar Spies, Nature
-              Fighters or great disco dancers
+              it is impossible not to notice when they are around, they are
+              unique and have exotic careers, they are seen as Angels or Demons,
+              Rockstars, Spies, and more.
+            </Text>
+            <Text
+              padding={"8px 22px"}
+              fontFamily={"Pacifico"}
+              textAlign={"center"}
+              fontSize={"2xl"}
+            >
+              Rarity: 🍆🍆🍆🍆💦
             </Text>
           </Box>
         </Container>
@@ -338,7 +418,7 @@ export default function Introduction() {
           >
             <Text
               textAlign={"center"}
-              fontSize={"4xl"}
+              fontSize={"5xl"}
               marginLeft={["0", "-35%"]}
               marginTop="0"
               fontFamily={"Pacifico"}
@@ -369,7 +449,7 @@ export default function Introduction() {
             <Text
               padding={"8px 16px"}
               alignSelf={"start"}
-              fontSize={"4xl"}
+              fontSize={"5xl"}
               fontFamily={"Pacifico"}
             >
               Team
