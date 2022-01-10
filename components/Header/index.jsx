@@ -21,12 +21,12 @@ function Header() {
         boxShadow="lg"
         display="flex"
         justifyContent={["center", "space-around"]}
-        flexWrap={['wrap', 'nowrap', 'nowrap']}
+        flexWrap={["wrap", "nowrap", "nowrap"]}
         alignItems="center"
         zIndex={5}
       >
         <Image
-          width={['160px', '220px']}
+          width={["160px", "220px"]}
           height="auto"
           src="logo_webitos.png"
           alt="Logo Webitos"
@@ -82,7 +82,11 @@ function Header() {
             >
               <IconButton borderRadius="50%" margin="1" icon={<BsDiscord />} />
             </a>
-            <a target="_blank" href="" rel="noreferrer">
+            <a
+              target="_blank"
+              href="https://twitter.com/WebitosNFT"
+              rel="noreferrer"
+            >
               <IconButton borderRadius="50%" margin="1" icon={<BsTwitter />} />
             </a>
           </Box>
@@ -146,7 +150,9 @@ function Header() {
               </a>
             </Text>
             <IconButton
-              icon={<GrClose borderRadius={"50px"} stroke="white" fill="white" />}
+              icon={
+                <GrClose borderRadius={"50px"} stroke="white" fill="white" />
+              }
               color={"white"}
               aria-label="Close Menu"
               size="lg"

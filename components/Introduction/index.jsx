@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import { Box, Text, Image, Container } from "@chakra-ui/react";
 import TeamCard from "../TeamCard";
@@ -83,6 +84,7 @@ export default function Introduction() {
             padding={"25px"}
             margin={"1.2rem"}
             flexWrap={"wrap"}
+            h={"400px"}
           >
             <Text
               padding={"8px 32px"}
@@ -112,6 +114,7 @@ export default function Introduction() {
             padding={"25px"}
             margin={"1.2rem"}
             flexWrap={"wrap"}
+            h={"400px"}
           >
             <Text padding={"8px 32px"} fontSize={"medium"}>
               <h2>No toxic masculinity!</h2>
