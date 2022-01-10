@@ -91,7 +91,15 @@ export default function Introduction() {
               fontSize={"medium"}
               position={"relative"}
             >
-              <h2>We belive in PP awareness</h2>
+              <Text
+                fontFamily={"Pacifico"}
+                fontSize={"2.2rem"}
+                lineHeight={1}
+                marginBottom={"1.5rem"}
+                color={"#bb7cee"}
+              >
+                We believe in PP awareness
+              </Text>
               Webitos is a project that seeks to raise awareness for prostate
               cancer, each year it takes the lives of around 350k + men
               worldwide, being the second most frequent malicious cancer (before
@@ -117,7 +125,15 @@ export default function Introduction() {
             h={"400px"}
           >
             <Text padding={"8px 32px"} fontSize={"medium"}>
-              <h2>No toxic masculinity!</h2>
+              <Text
+                fontFamily={"Pacifico"}
+                fontSize={"2.2rem"}
+                lineHeight={1}
+                marginBottom={"1.5rem"}
+                color={"#bb7cee"}
+              >
+                No toxic masculinity!
+              </Text>
               We want to make a statement against the stigmatization of the
               virile member, male bodied individuals are responsible for many
               evil acts and we want to add our voice to their condemnation, our
