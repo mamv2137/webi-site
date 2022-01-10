@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Box, Flex, Button, IconButton, Image, Text } from "@chakra-ui/react";
 
-import { BsDiscord, BsTwitter } from "react-icons/bs";
+import { BsDiscord, BsTwitter, BsInstagram } from "react-icons/bs";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { GrClose } from "react-icons/gr";
 
@@ -88,6 +88,13 @@ function Header() {
               rel="noreferrer"
             >
               <IconButton borderRadius="50%" margin="1" icon={<BsTwitter />} />
+            </a>
+            <a
+              target="_blank"
+              href="https://www.instagram.com/webitosnft/"
+              rel="noreferrer"
+            >
+              <IconButton borderRadius="50%" margin="1" icon={<BsInstagram />} />
             </a>
           </Box>
         </Box>
