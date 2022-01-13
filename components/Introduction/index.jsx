@@ -84,7 +84,7 @@ export default function Introduction() {
             padding={"25px"}
             margin={"1.2rem"}
             flexWrap={"wrap"}
-            h={"400px"}
+            h={"auto"}
           >
             <Text
               padding={"8px 32px"}
@@ -122,7 +122,7 @@ export default function Introduction() {
             padding={"25px"}
             margin={"1.2rem"}
             flexWrap={"wrap"}
-            h={"400px"}
+            h={"auto"}
           >
             <Text padding={"8px 32px"} fontSize={"medium"}>
               <Text
