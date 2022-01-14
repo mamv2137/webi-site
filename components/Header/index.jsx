@@ -65,7 +65,7 @@ function Header() {
               <a
                 className="btn rounded"
                 target="_blank"
-                href=""
+                href="https://opensea.io/collection/webitos"
                 rel="noreferrer"
               >
                 <span className="text">Open Sea</span>
